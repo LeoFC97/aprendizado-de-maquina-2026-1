@@ -6,10 +6,14 @@ import type {
   MetricKey,
   MetricStats,
   Outlier,
+  OutlierResidual,
+  RegressionResult,
   SlimAuthor,
 } from "../src/lib/types";
 import { NUMERIC_METRICS } from "../src/lib/types";
-import { summarize } from "../src/lib/stats";
+import { linearRegression, summarize } from "../src/lib/stats";
+
+const REFERENCE_YEAR = 2023;
 
 const DATA_DIR = path.resolve(__dirname, "../data");
 const IN = path.join(DATA_DIR, "german-authors.json");
@@ -64,7 +68,9 @@ async function main() {
 
   const stats: MetricStats[] = NUMERIC_METRICS.map((m) => {
     const values = authors.map((a) => a[m] as number).filter((v) => Number.isFinite(v));
-    return { metric: m, ...summarize(values) };
+    const s = summarize(values);
+    const outliersPct = s.count > 0 ? (s.outliersLow + s.outliersHigh) / s.count : 0;
+    return { metric: m, ...s, outliersPct };
   });
 
   const topUpperOutliers = NUMERIC_METRICS.reduce(
@@ -107,6 +113,54 @@ async function main() {
       value: a.selfCitePct,
     }));
 
+  // === Regressão linear ===
+  // y = a + bx, com x = anos desde a 1ª publicação, y = nc2323(ns) (cit. sem auto-cit.).
+  // Ajustado em autores que NÃO são outliers de self%, conforme enunciado.
+  const selfStats = stats.find((s) => s.metric === "selfCitePct")!;
+  const selfFence = selfStats.upperFence;
+
+  const cleanPoints = authors
+    .filter((a) => a.selfCitePct <= selfFence)
+    .filter((a) => a.firstYear > 0)
+    .map((a) => ({ x: REFERENCE_YEAR - a.firstYear, y: a.ncNs }));
+
+  const reg = linearRegression(cleanPoints);
+  const regression: RegressionResult = {
+    a: reg.a,
+    b: reg.b,
+    r2: reg.r2,
+    n: reg.n,
+    xLabel: "anos desde a 1ª publicação",
+    yLabel: "nc2323 (sem auto-citações)",
+    selfPctThreshold: selfFence,
+    droppedCount: authors.length - cleanPoints.length,
+    referenceYear: REFERENCE_YEAR,
+  };
+
+  // Resíduos: para cada autor que é outlier em self% (foi excluído do fit),
+  // comparamos suas citações REAIS (com auto-cit, nc) contra o esperado pelo
+  // modelo. Diferença positiva indica autor com muito mais citações do que
+  // a regressão prevê para alguém com o mesmo tempo de carreira.
+  const residuals: OutlierResidual[] = authors
+    .filter((a) => a.selfCitePct > selfFence)
+    .filter((a) => a.firstYear > 0)
+    .map<OutlierResidual>((a) => {
+      const yearsActive = REFERENCE_YEAR - a.firstYear;
+      const predicted = regression.a + regression.b * yearsActive;
+      return {
+        name: a.name,
+        institution: a.institution,
+        field: a.field,
+        yearsActive,
+        selfPct: Number(a.selfCitePct.toFixed(4)),
+        nc: a.nc,
+        ncNs: a.ncNs,
+        predicted: Number(predicted.toFixed(1)),
+        residual: Number((a.nc - predicted).toFixed(1)),
+      };
+    })
+    .sort((a, b) => b.residual - a.residual);
+
   const report: AnalysisReport = {
     generatedAt: new Date().toISOString(),
     country: "deu",
@@ -117,6 +171,8 @@ async function main() {
     topHDeltaPct,
     topSelfCitePct,
     fieldBreakdown: fieldBreakdown(authors),
+    regression,
+    residuals,
   };
 
   fs.writeFileSync(OUT, JSON.stringify(report, null, 2));
@@ -134,19 +190,44 @@ async function main() {
     selfPct: Number(a.selfCitePct.toFixed(4)),
     c: Number(a.c.toFixed(3)),
     cNs: Number(a.cNs.toFixed(3)),
+    fy: a.firstYear,
+    nc: a.nc,
+    ncNs: a.ncNs,
   }));
   fs.writeFileSync(SLIM_OUT, JSON.stringify(slim));
   const slimKb = (fs.statSync(SLIM_OUT).size / 1024).toFixed(0);
   console.log(`Wrote ${SLIM_OUT} (${slimKb} KB)`);
 
   // brief summary to stdout
-  console.log("\nIQR outlier counts (upper):");
+  console.log("\nIQR outliers per column (% of total):");
   for (const s of stats) {
-    console.log(`  ${s.metric.padEnd(12)} q1=${s.q1.toFixed(2)} q3=${s.q3.toFixed(2)} upperFence=${s.upperFence.toFixed(2)} highOutliers=${s.outliersHigh}`);
+    const total = s.outliersLow + s.outliersHigh;
+    console.log(
+      `  ${s.metric.padEnd(12)} total=${String(total).padStart(4)} (${(s.outliersPct * 100).toFixed(2)}%)  upper=${s.outliersHigh} lower=${s.outliersLow}`,
+    );
   }
-  console.log(`\nTop 5 authors by absolute h-index drop (self-citations removed):`);
-  for (const o of topHDelta.slice(0, 5)) {
-    console.log(`  ${o.value.toFixed(0)}  ${o.name}  (${o.institution ?? "-"})`);
+
+  console.log(
+    `\nRegression y = a + b·x  (x=anos desde 1ª publicação, y=cit. sem auto-cit.)`,
+  );
+  console.log(
+    `  selfPct threshold (Q3+1.5·IQR): ${selfFence.toFixed(4)} — droppped ${regression.droppedCount} outliers`,
+  );
+  console.log(`  a = ${regression.a.toFixed(2)}`);
+  console.log(`  b = ${regression.b.toFixed(2)}`);
+  console.log(`  R² = ${regression.r2.toFixed(4)}  (n=${regression.n})`);
+
+  console.log(`\nTop 5 self% outliers by residual (nc - predicted):`);
+  for (const r of residuals.slice(0, 5)) {
+    console.log(
+      `  +${r.residual.toFixed(0).padStart(7)}  self=${(r.selfPct * 100).toFixed(1)}% nc=${r.nc} pred=${r.predicted.toFixed(0)}  ${r.name}`,
+    );
+  }
+  console.log(`\nTop 5 self% outliers by MOST negative residual:`);
+  for (const r of residuals.slice(-5).reverse()) {
+    console.log(
+      `  ${r.residual.toFixed(0).padStart(7)}  self=${(r.selfPct * 100).toFixed(1)}% nc=${r.nc} pred=${r.predicted.toFixed(0)}  ${r.name}`,
+    );
   }
 }
 

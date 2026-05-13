@@ -5,7 +5,8 @@ import type { AnalysisReport, SlimAuthor } from "@/lib/types";
 import { Filters, defaultFilters, type FilterState } from "./Filters";
 import { AuthorsTable } from "./AuthorsTable";
 import { HistogramH, HistogramSelf, TopAuthorsBar, type TopMetric } from "./Charts";
-import { fmt } from "@/lib/format";
+import { RegressionPanel } from "./RegressionPanel";
+import { fmt, pct } from "@/lib/format";
 
 type Props = {
   authors: SlimAuthor[];
@@ -87,6 +88,9 @@ export function Dashboard({ authors, report }: Props) {
         <h2 className="mb-3 text-xl font-semibold tracking-tight">
           Estatísticas IQR (base completa, sem filtros)
         </h2>
+        <p className="mb-3 text-xs text-zinc-500">
+          Outliers contados como pontos fora de [Q1 − 1.5·IQR, Q3 + 1.5·IQR].
+        </p>
         <div className="overflow-x-auto rounded border border-zinc-200 dark:border-zinc-800">
           <table className="w-full text-sm">
             <thead className="bg-zinc-50 text-left dark:bg-zinc-900">
@@ -98,25 +102,46 @@ export function Dashboard({ authors, report }: Props) {
                 <Th align="right">Q3</Th>
                 <Th align="right">IQR</Th>
                 <Th align="right">Cerca sup.</Th>
-                <Th align="right">Outliers altos</Th>
+                <Th align="right">Outliers</Th>
+                <Th align="right">% outliers</Th>
               </tr>
             </thead>
             <tbody>
-              {report.stats.map((s) => (
-                <tr key={s.metric} className="border-t border-zinc-100 dark:border-zinc-800">
-                  <Td><code>{s.metric}</code></Td>
-                  <Td align="right">{fmt(s.count)}</Td>
-                  <Td align="right">{fmt(s.median)}</Td>
-                  <Td align="right">{fmt(s.q1)}</Td>
-                  <Td align="right">{fmt(s.q3)}</Td>
-                  <Td align="right">{fmt(s.iqr)}</Td>
-                  <Td align="right">{fmt(s.upperFence)}</Td>
-                  <Td align="right">{fmt(s.outliersHigh)}</Td>
-                </tr>
-              ))}
+              {report.stats.map((s) => {
+                const total = s.outliersHigh + s.outliersLow;
+                return (
+                  <tr key={s.metric} className="border-t border-zinc-100 dark:border-zinc-800">
+                    <Td><code>{s.metric}</code></Td>
+                    <Td align="right">{fmt(s.count)}</Td>
+                    <Td align="right">{fmt(s.median)}</Td>
+                    <Td align="right">{fmt(s.q1)}</Td>
+                    <Td align="right">{fmt(s.q3)}</Td>
+                    <Td align="right">{fmt(s.iqr)}</Td>
+                    <Td align="right">{fmt(s.upperFence)}</Td>
+                    <Td align="right">{fmt(total)}</Td>
+                    <Td align="right">{pct(s.outliersPct)}</Td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="mb-3 text-xl font-semibold tracking-tight">
+          Regressão linear: citações (sem auto) ~ anos de carreira
+        </h2>
+        <p className="mb-3 text-xs text-zinc-500">
+          Modelo y = a + b·x ajustado por OLS após descartar os {report.regression.droppedCount} outliers de self%
+          (autores com auto-citação acima da cerca IQR). Em seguida calculamos, para cada outlier descartado, o resíduo
+          contra suas citações <strong>com</strong> auto-citação.
+        </p>
+        <RegressionPanel
+          authors={authors}
+          regression={report.regression}
+          residuals={report.residuals}
+        />
       </section>
     </main>
   );

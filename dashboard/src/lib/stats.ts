@@ -8,6 +8,37 @@ export function quantile(sorted: number[], q: number): number {
   return sorted[base] + rest * (next - sorted[base]);
 }
 
+export function linearRegression(points: { x: number; y: number }[]) {
+  const n = points.length;
+  if (n < 2) return { a: 0, b: 0, r2: 0, n };
+  let sx = 0;
+  let sy = 0;
+  for (const p of points) {
+    sx += p.x;
+    sy += p.y;
+  }
+  const xbar = sx / n;
+  const ybar = sy / n;
+  let num = 0;
+  let den = 0;
+  for (const p of points) {
+    const dx = p.x - xbar;
+    num += dx * (p.y - ybar);
+    den += dx * dx;
+  }
+  const b = den === 0 ? 0 : num / den;
+  const a = ybar - b * xbar;
+  let ssRes = 0;
+  let ssTot = 0;
+  for (const p of points) {
+    const yhat = a + b * p.x;
+    ssRes += (p.y - yhat) ** 2;
+    ssTot += (p.y - ybar) ** 2;
+  }
+  const r2 = ssTot === 0 ? 0 : 1 - ssRes / ssTot;
+  return { a, b, r2, n };
+}
+
 export function summarize(values: number[]) {
   const sorted = [...values].sort((a, b) => a - b);
   const n = sorted.length;

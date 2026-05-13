@@ -109,6 +109,10 @@ export type SlimAuthor = {
   selfPct: number;
   c: number;
   cNs: number;
+  // needed for regression chart
+  fy: number;   // firstYear
+  nc: number;   // total citations (with self-cit)
+  ncNs: number; // citations without self-cit
 };
 
 export type MetricStats = {
@@ -126,6 +130,31 @@ export type MetricStats = {
   upperFence: number;
   outliersLow: number;
   outliersHigh: number;
+  outliersPct: number; // (low + high) / count
+};
+
+export type RegressionResult = {
+  a: number;
+  b: number;
+  r2: number;
+  n: number;
+  xLabel: string;
+  yLabel: string;
+  selfPctThreshold: number; // upperFence used to drop outliers
+  droppedCount: number;
+  referenceYear: number;
+};
+
+export type OutlierResidual = {
+  name: string;
+  institution: string | null;
+  field: string | null;
+  yearsActive: number;
+  selfPct: number;
+  nc: number;      // actual including self-citations
+  ncNs: number;    // actual excluding self-citations
+  predicted: number;
+  residual: number; // nc - predicted
 };
 
 export type Outlier = {
@@ -146,4 +175,6 @@ export type AnalysisReport = {
   topHDeltaPct: Outlier[];      // largest relative drop (filtered to h >= threshold)
   topSelfCitePct: Outlier[];    // highest self-citation %
   fieldBreakdown: { field: string; count: number; medianH: number; medianHNs: number; medianSelfPct: number }[];
+  regression: RegressionResult;
+  residuals: OutlierResidual[]; // for self-citation outliers
 };

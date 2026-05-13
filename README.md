@@ -64,4 +64,12 @@ npm run dev   # http://localhost:3000
 - Histogramas de h-index (com vs sem auto-cit.) e self%.
 - Bar chart Top N com seletor de métrica.
 - Tabela paginada e ordenável por qualquer coluna numérica.
-- Estatísticas IQR da base completa (referência fixa).
+- Estatísticas IQR da base completa com % de outliers por coluna.
+- Painel de regressão linear `nc(ns) ~ anos de carreira` com scatter, reta
+  ajustada e tabela de resíduos dos outliers de self%.
+
+## Análise qualitativa
+
+A discussão sobre **origem dos outliers de auto-citação** e **recomendações para
+o sistema alemão de fomento à pesquisa** (DFG, BMBF, Helmholtz, Max-Planck...)
+está em [`ANALISE.md`](./ANALISE.md).
