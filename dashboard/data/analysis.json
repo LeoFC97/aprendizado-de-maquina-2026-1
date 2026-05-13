@@ -1,0 +1,2623 @@
+{
+  "generatedAt": "2026-05-13T03:50:48.575Z",
+  "country": "deu",
+  "authorCount": 10420,
+  "stats": [
+    {
+      "metric": "np",
+      "count": 10420,
+      "min": 2,
+      "max": 2448,
+      "mean": 234.51516314779272,
+      "std": 208.64630519659383,
+      "q1": 99,
+      "median": 176.5,
+      "q3": 300,
+      "iqr": 201,
+      "lowerFence": -202.5,
+      "upperFence": 601.5,
+      "outliersLow": 0,
+      "outliersHigh": 604
+    },
+    {
+      "metric": "nc",
+      "count": 10420,
+      "min": 23,
+      "max": 32663,
+      "mean": 1171.3841650671784,
+      "std": 1663.5073517502071,
+      "q1": 404,
+      "median": 715,
+      "q3": 1278.25,
+      "iqr": 874.25,
+      "lowerFence": -907.375,
+      "upperFence": 2589.625,
+      "outliersLow": 0,
+      "outliersHigh": 893
+    },
+    {
+      "metric": "ncNs",
+      "count": 10420,
+      "min": 22,
+      "max": 29345,
+      "mean": 1012.2269673704415,
+      "std": 1463.0691263065655,
+      "q1": 350,
+      "median": 618,
+      "q3": 1114,
+      "iqr": 764,
+      "lowerFence": -796,
+      "upperFence": 2260,
+      "outliersLow": 0,
+      "outliersHigh": 863
+    },
+    {
+      "metric": "h",
+      "count": 10420,
+      "min": 2,
+      "max": 68,
+      "mean": 13.305470249520154,
+      "std": 6.265990585903212,
+      "q1": 9,
+      "median": 12,
+      "q3": 16,
+      "iqr": 7,
+      "lowerFence": -1.5,
+      "upperFence": 26.5,
+      "outliersLow": 0,
+      "outliersHigh": 435
+    },
+    {
+      "metric": "hNs",
+      "count": 10420,
+      "min": 2,
+      "max": 65,
+      "mean": 12.331669865642993,
+      "std": 5.818048469933588,
+      "q1": 8,
+      "median": 11,
+      "q3": 15,
+      "iqr": 7,
+      "lowerFence": -2.5,
+      "upperFence": 25.5,
+      "outliersLow": 0,
+      "outliersHigh": 355
+    },
+    {
+      "metric": "hm",
+      "count": 10420,
+      "min": 0.8213713492721204,
+      "max": 24.45253623188405,
+      "mean": 5.921369723351511,
+      "std": 2.2014166968126663,
+      "q1": 4.568452380952381,
+      "median": 5.675550551337392,
+      "q3": 6.901396439893022,
+      "iqr": 2.3329440589406403,
+      "lowerFence": 1.069036292541421,
+      "upperFence": 10.400812528303982,
+      "outliersLow": 8,
+      "outliersHigh": 406
+    },
+    {
+      "metric": "hmNs",
+      "count": 10420,
+      "min": 0.5142267119629008,
+      "max": 23.75253623188406,
+      "mean": 5.550923519077327,
+      "std": 2.126288446776174,
+      "q1": 4.000248912225953,
+      "median": 5.033333333333333,
+      "q3": 6.523164682539683,
+      "iqr": 2.5229157703137304,
+      "lowerFence": 0.21587525675535701,
+      "upperFence": 10.307538338010279,
+      "outliersLow": 0,
+      "outliersHigh": 331
+    },
+    {
+      "metric": "c",
+      "count": 10420,
+      "min": 1.853888230319976,
+      "max": 5.139399475252951,
+      "mean": 2.7760032417511242,
+      "std": 0.34977267947319296,
+      "q1": 2.5409069607563963,
+      "median": 2.722816481287328,
+      "q3": 2.9567666360366127,
+      "iqr": 0.4158596752802164,
+      "lowerFence": 1.9171174478360717,
+      "upperFence": 3.580556148956937,
+      "outliersLow": 4,
+      "outliersHigh": 315
+    },
+    {
+      "metric": "cNs",
+      "count": 10420,
+      "min": 1.786703269508342,
+      "max": 5.13591159405176,
+      "mean": 2.7252853765511817,
+      "std": 0.3592509441879216,
+      "q1": 2.488384193196346,
+      "median": 2.669031145243935,
+      "q3": 2.910281379230666,
+      "iqr": 0.4218971860343199,
+      "lowerFence": 1.855538414144866,
+      "upperFence": 3.5431271582821457,
+      "outliersLow": 6,
+      "outliersHigh": 331
+    },
+    {
+      "metric": "selfCitePct",
+      "count": 10420,
+      "min": 0,
+      "max": 0.8495,
+      "mean": 0.12760567178502916,
+      "std": 0.08928091870494052,
+      "q1": 0.0662,
+      "median": 0.1121,
+      "q3": 0.169225,
+      "iqr": 0.10302499999999999,
+      "lowerFence": -0.0883375,
+      "upperFence": 0.32376249999999995,
+      "outliersLow": 0,
+      "outliersHigh": 377
+    },
+    {
+      "metric": "hDelta",
+      "count": 10420,
+      "min": 0,
+      "max": 13,
+      "mean": 0.9738003838771593,
+      "std": 1.1554696556900945,
+      "q1": 0,
+      "median": 1,
+      "q3": 1,
+      "iqr": 1,
+      "lowerFence": -1.5,
+      "upperFence": 2.5,
+      "outliersLow": 0,
+      "outliersHigh": 685
+    },
+    {
+      "metric": "hDeltaPct",
+      "count": 10420,
+      "min": 0,
+      "max": 0.6153846153846154,
+      "mean": 0.06980451648340422,
+      "std": 0.07266797616663165,
+      "q1": 0,
+      "median": 0.06666666666666667,
+      "q3": 0.1111111111111111,
+      "iqr": 0.1111111111111111,
+      "lowerFence": -0.16666666666666666,
+      "upperFence": 0.2777777777777778,
+      "outliersLow": 0,
+      "outliersHigh": 157
+    }
+  ],
+  "topUpperOutliers": {
+    "np": [
+      {
+        "name": "Büchler, Markus W.",
+        "institution": "Universitätsklinikum Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 2448
+      },
+      {
+        "name": "Diener, Hans Christoph",
+        "institution": "Universität Duisburg-Essen",
+        "field": "Clinical Medicine",
+        "value": 2396
+      },
+      {
+        "name": "Jones, Peter G.",
+        "institution": "Technische Universität Braunschweig",
+        "field": "Chemistry",
+        "value": 2052
+      },
+      {
+        "name": "Wermes, N.",
+        "institution": "Universität Bonn",
+        "field": "Physics & Astronomy",
+        "value": 1971
+      },
+      {
+        "name": "Müllen, Klaus",
+        "institution": "Max Planck Institute for Polymer Research",
+        "field": "Chemistry",
+        "value": 1968
+      },
+      {
+        "name": "Manns, Michael P.",
+        "institution": "Hannover Medical School",
+        "field": "Clinical Medicine",
+        "value": 1964
+      },
+      {
+        "name": "Reiser, Maximilian",
+        "institution": "Klinikum der Universität München",
+        "field": "Clinical Medicine",
+        "value": 1957
+      },
+      {
+        "name": "Schubert, Ulrich S.",
+        "institution": "Friedrich-Schiller-Universität Jena",
+        "field": "Chemistry",
+        "value": 1927
+      },
+      {
+        "name": "Brenner, Hermann",
+        "institution": "German Cancer Research Center",
+        "field": "Clinical Medicine",
+        "value": 1925
+      },
+      {
+        "name": "Ritz, Eberhard",
+        "institution": "Universität Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 1807
+      },
+      {
+        "name": "De Boer, W.",
+        "institution": "Karlsruher Institut für Technologie",
+        "field": "Physics & Astronomy",
+        "value": 1804
+      },
+      {
+        "name": "Ploog, K.",
+        "institution": "Max Planck Institute for Solid State Research",
+        "field": "Physics & Astronomy",
+        "value": 1760
+      },
+      {
+        "name": "Katus, Hugo A.",
+        "institution": "Universitätsklinikum Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 1747
+      },
+      {
+        "name": "Bethke, S.",
+        "institution": "Max Planck Institute for Physics (Werner Heisenberg Institute)",
+        "field": "Physics & Astronomy",
+        "value": 1733
+      },
+      {
+        "name": "Erbel, R.",
+        "institution": "Universitätsklinikum Essen",
+        "field": "Clinical Medicine",
+        "value": 1674
+      },
+      {
+        "name": "Böhm, Michael",
+        "institution": "Universitätsklinikum des Saarlandes Medizinische Fakultät der Universität des Saarlandes",
+        "field": "Clinical Medicine",
+        "value": 1636
+      },
+      {
+        "name": "Kartner, Franz X.",
+        "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+        "field": "Physics & Astronomy",
+        "value": 1610
+      },
+      {
+        "name": "Haverich, Axel",
+        "institution": "Hannover Medical School",
+        "field": "Clinical Medicine",
+        "value": 1597
+      },
+      {
+        "name": "Schott, M.",
+        "institution": "Johannes Gutenberg-Universität Mainz",
+        "field": "Physics & Astronomy",
+        "value": 1594
+      },
+      {
+        "name": "Klanner, R.",
+        "institution": "Universität Hamburg",
+        "field": "Physics & Astronomy",
+        "value": 1549
+      },
+      {
+        "name": "Lang, Florian",
+        "institution": "Eberhard Karls Universität Tübingen",
+        "field": "Biomedical Research",
+        "value": 1543
+      },
+      {
+        "name": "Jung, H.",
+        "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+        "field": "Physics & Astronomy",
+        "value": 1530
+      },
+      {
+        "name": "Tünnermann, A.",
+        "institution": "Fraunhofer-Institut für Angewandte Optik und Feinmechanik in Jena",
+        "field": "Physics & Astronomy",
+        "value": 1525
+      },
+      {
+        "name": "Boccaccini, Aldo R.",
+        "institution": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+        "field": "Enabling & Strategic Technologies",
+        "value": 1502
+      },
+      {
+        "name": "Shukla, P. K.",
+        "institution": "Ruhr-Universitat Bochum",
+        "field": "Physics & Astronomy",
+        "value": 1462
+      }
+    ],
+    "nc": [
+      {
+        "name": "Brenner, Hermann",
+        "institution": "German Cancer Research Center",
+        "field": "Clinical Medicine",
+        "value": 32663
+      },
+      {
+        "name": "Fischer, Florian",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 29346
+      },
+      {
+        "name": "Bork, Peer",
+        "institution": "European Molecular Biology Laboratory Heidelberg",
+        "field": "Biomedical Research",
+        "value": 24709
+      },
+      {
+        "name": "Bärnighausen, Till",
+        "institution": "Universität Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 22791
+      },
+      {
+        "name": "Jonas, Jost B.",
+        "institution": "Universität Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 22588
+      },
+      {
+        "name": "Landmesser, Ulf",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 21483
+      },
+      {
+        "name": "Ringle, Christian M.",
+        "institution": "Hamburg University of Technology",
+        "field": "Economics & Business",
+        "value": 21110
+      },
+      {
+        "name": "Westerman, Ronny",
+        "institution": "Federal Institute for Population Research",
+        "field": "Clinical Medicine",
+        "value": 19982
+      },
+      {
+        "name": "Katus, Hugo A.",
+        "institution": "Universitätsklinikum Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 19826
+      },
+      {
+        "name": "Panda-Jonas, Songhomitra",
+        "institution": "Privatpraxis Prof Jonas und Dr Panda-Jonas",
+        "field": "Clinical Medicine",
+        "value": 19678
+      },
+      {
+        "name": "Karch, André",
+        "institution": "University of Münster",
+        "field": "Clinical Medicine",
+        "value": 19453
+      },
+      {
+        "name": "Jonas, Jost B.",
+        "institution": "Universität Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 19214
+      },
+      {
+        "name": "Baune, Bernhard T.",
+        "institution": "University of Münster",
+        "field": "Clinical Medicine",
+        "value": 19133
+      },
+      {
+        "name": "Lorkowski, Stefan",
+        "institution": "Friedrich-Schiller-Universität Jena",
+        "field": "Clinical Medicine",
+        "value": 19093
+      },
+      {
+        "name": "Grimme, Stefan",
+        "institution": "Universität Bonn",
+        "field": "Chemistry",
+        "value": 18925
+      },
+      {
+        "name": "Brox, Thomas",
+        "institution": "Universität Freiburg",
+        "field": "Information & Communication Technologies",
+        "value": 18193
+      },
+      {
+        "name": "Anker, Stefan",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 18106
+      },
+      {
+        "name": "Nagel, Gabriele",
+        "institution": "Universität Ulm",
+        "field": "Clinical Medicine",
+        "value": 18084
+      },
+      {
+        "name": "Huber, Wolfgang",
+        "institution": "European Molecular Biology Laboratory Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 17560
+      },
+      {
+        "name": "Schadendorf, Dirk",
+        "institution": "Universitätsklinikum Essen",
+        "field": "Clinical Medicine",
+        "value": 17312
+      },
+      {
+        "name": "Furthmüller, Jürgen",
+        "institution": "Friedrich-Schiller-Universität Jena",
+        "field": "Physics & Astronomy",
+        "value": 17111
+      },
+      {
+        "name": "Moazen, Babak",
+        "institution": "Frankfurt University of Applied Sciences",
+        "field": "Clinical Medicine",
+        "value": 16133
+      },
+      {
+        "name": "Mueller, Ulrich Otto",
+        "institution": "Federal Institute for Population Research",
+        "field": "Clinical Medicine",
+        "value": 15352
+      },
+      {
+        "name": "Bauersachs, Johann",
+        "institution": "Hannover Medical School",
+        "field": "Clinical Medicine",
+        "value": 15268
+      },
+      {
+        "name": "Hindricks, Gerhard",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 15220
+      }
+    ],
+    "ncNs": [
+      {
+        "name": "Brenner, Hermann",
+        "institution": "German Cancer Research Center",
+        "field": "Clinical Medicine",
+        "value": 29345
+      },
+      {
+        "name": "Fischer, Florian",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 27066
+      },
+      {
+        "name": "Bork, Peer",
+        "institution": "European Molecular Biology Laboratory Heidelberg",
+        "field": "Biomedical Research",
+        "value": 23953
+      },
+      {
+        "name": "Bärnighausen, Till",
+        "institution": "Universität Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 20796
+      },
+      {
+        "name": "Ringle, Christian M.",
+        "institution": "Hamburg University of Technology",
+        "field": "Economics & Business",
+        "value": 20666
+      },
+      {
+        "name": "Jonas, Jost B.",
+        "institution": "Universität Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 20179
+      },
+      {
+        "name": "Westerman, Ronny",
+        "institution": "Federal Institute for Population Research",
+        "field": "Clinical Medicine",
+        "value": 18493
+      },
+      {
+        "name": "Grimme, Stefan",
+        "institution": "Universität Bonn",
+        "field": "Chemistry",
+        "value": 18244
+      },
+      {
+        "name": "Landmesser, Ulf",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 18223
+      },
+      {
+        "name": "Brox, Thomas",
+        "institution": "Universität Freiburg",
+        "field": "Information & Communication Technologies",
+        "value": 18139
+      },
+      {
+        "name": "Jonas, Jost B.",
+        "institution": "Universität Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 18095
+      },
+      {
+        "name": "Karch, André",
+        "institution": "University of Münster",
+        "field": "Clinical Medicine",
+        "value": 17850
+      },
+      {
+        "name": "Panda-Jonas, Songhomitra",
+        "institution": "Privatpraxis Prof Jonas und Dr Panda-Jonas",
+        "field": "Clinical Medicine",
+        "value": 17631
+      },
+      {
+        "name": "Lorkowski, Stefan",
+        "institution": "Friedrich-Schiller-Universität Jena",
+        "field": "Clinical Medicine",
+        "value": 17451
+      },
+      {
+        "name": "Katus, Hugo A.",
+        "institution": "Universitätsklinikum Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 17404
+      },
+      {
+        "name": "Huber, Wolfgang",
+        "institution": "European Molecular Biology Laboratory Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 17134
+      },
+      {
+        "name": "Furthmüller, Jürgen",
+        "institution": "Friedrich-Schiller-Universität Jena",
+        "field": "Physics & Astronomy",
+        "value": 17056
+      },
+      {
+        "name": "Baune, Bernhard T.",
+        "institution": "University of Münster",
+        "field": "Clinical Medicine",
+        "value": 16703
+      },
+      {
+        "name": "Nagel, Gabriele",
+        "institution": "Universität Ulm",
+        "field": "Clinical Medicine",
+        "value": 16388
+      },
+      {
+        "name": "Anker, Stefan",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 15862
+      },
+      {
+        "name": "Schadendorf, Dirk",
+        "institution": "Universitätsklinikum Essen",
+        "field": "Clinical Medicine",
+        "value": 15635
+      },
+      {
+        "name": "Moazen, Babak",
+        "institution": "Frankfurt University of Applied Sciences",
+        "field": "Clinical Medicine",
+        "value": 14610
+      },
+      {
+        "name": "Mueller, Ulrich Otto",
+        "institution": "Federal Institute for Population Research",
+        "field": "Clinical Medicine",
+        "value": 14114
+      },
+      {
+        "name": "Rothenbacher, Dietrich",
+        "institution": "Universität Ulm",
+        "field": "Clinical Medicine",
+        "value": 13424
+      },
+      {
+        "name": "Hindricks, Gerhard",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 13268
+      }
+    ],
+    "h": [
+      {
+        "name": "Brenner, Hermann",
+        "institution": "German Cancer Research Center",
+        "field": "Clinical Medicine",
+        "value": 68
+      },
+      {
+        "name": "Fischer, Florian",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 66
+      },
+      {
+        "name": "Bork, Peer",
+        "institution": "European Molecular Biology Laboratory Heidelberg",
+        "field": "Biomedical Research",
+        "value": 63
+      },
+      {
+        "name": "Schadendorf, Dirk",
+        "institution": "Universitätsklinikum Essen",
+        "field": "Clinical Medicine",
+        "value": 62
+      },
+      {
+        "name": "Anker, Stefan",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 56
+      },
+      {
+        "name": "Jonas, Jost B.",
+        "institution": "Universität Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 54
+      },
+      {
+        "name": "Strasser, Peter",
+        "institution": "Technische Universität Berlin",
+        "field": "Enabling & Strategic Technologies",
+        "value": 50
+      },
+      {
+        "name": "Feng, Xinliang",
+        "institution": "Technische Universität Dresden",
+        "field": "Enabling & Strategic Technologies",
+        "value": 50
+      },
+      {
+        "name": "Bärnighausen, Till",
+        "institution": "Universität Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 50
+      },
+      {
+        "name": "Gair, Jonathan",
+        "institution": "Max-Planck-Institut für Gravitationsphysik (Albert-Einstein-Institut)",
+        "field": "Physics & Astronomy",
+        "value": 50
+      },
+      {
+        "name": "Jonas, Jost B.",
+        "institution": "Universität Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 49
+      },
+      {
+        "name": "Ringle, Christian M.",
+        "institution": "Hamburg University of Technology",
+        "field": "Economics & Business",
+        "value": 49
+      },
+      {
+        "name": "Peters, Annette",
+        "institution": "Helmholtz Center Munich German Research Center for Environmental Health",
+        "field": "Clinical Medicine",
+        "value": 49
+      },
+      {
+        "name": "Schreiber, Stefan",
+        "institution": "Universitätsklinikum Schleswig-Holstein Campus Kiel",
+        "field": "Clinical Medicine",
+        "value": 49
+      },
+      {
+        "name": "Westerman, Ronny",
+        "institution": "Federal Institute for Population Research",
+        "field": "Clinical Medicine",
+        "value": 49
+      },
+      {
+        "name": "Mann, Matthias",
+        "institution": "Max-Planck-Institut für Biochemie",
+        "field": "Biomedical Research",
+        "value": 48
+      },
+      {
+        "name": "Rinklebe, Jörg",
+        "institution": "Bergische Universität Wuppertal",
+        "field": "Earth & Environmental Sciences",
+        "value": 48
+      },
+      {
+        "name": "Reck, Martin",
+        "institution": "German Center for Lung Research",
+        "field": "Clinical Medicine",
+        "value": 47
+      },
+      {
+        "name": "Antonietti, Markus",
+        "institution": "Max-Planck-Institut für Kolloid- und Grenzflächenforschung",
+        "field": "Chemistry",
+        "value": 47
+      },
+      {
+        "name": "Schnabel, Roman",
+        "institution": "Universität Hamburg",
+        "field": "Physics & Astronomy",
+        "value": 47
+      },
+      {
+        "name": "Landmesser, Ulf",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 47
+      },
+      {
+        "name": "Danzmann, K.",
+        "institution": "Max-Planck-Institut für Gravitationsphysik (Albert-Einstein-Institut)",
+        "field": "Physics & Astronomy",
+        "value": 47
+      },
+      {
+        "name": "Raabe, Dierk",
+        "institution": "Max Planck Institute for Sustainable Materials",
+        "field": "Enabling & Strategic Technologies",
+        "value": 46
+      },
+      {
+        "name": "Pfister, Stefan M.",
+        "institution": "Universitätsklinikum Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 46
+      },
+      {
+        "name": "Müller, Klaus Robert",
+        "institution": "Max Planck Institute for Informatics",
+        "field": "Information & Communication Technologies",
+        "value": 45
+      }
+    ],
+    "hNs": [
+      {
+        "name": "Brenner, Hermann",
+        "institution": "German Cancer Research Center",
+        "field": "Clinical Medicine",
+        "value": 65
+      },
+      {
+        "name": "Fischer, Florian",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 64
+      },
+      {
+        "name": "Bork, Peer",
+        "institution": "European Molecular Biology Laboratory Heidelberg",
+        "field": "Biomedical Research",
+        "value": 63
+      },
+      {
+        "name": "Schadendorf, Dirk",
+        "institution": "Universitätsklinikum Essen",
+        "field": "Clinical Medicine",
+        "value": 58
+      },
+      {
+        "name": "Anker, Stefan",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 52
+      },
+      {
+        "name": "Jonas, Jost B.",
+        "institution": "Universität Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 51
+      },
+      {
+        "name": "Strasser, Peter",
+        "institution": "Technische Universität Berlin",
+        "field": "Enabling & Strategic Technologies",
+        "value": 49
+      },
+      {
+        "name": "Westerman, Ronny",
+        "institution": "Federal Institute for Population Research",
+        "field": "Clinical Medicine",
+        "value": 49
+      },
+      {
+        "name": "Jonas, Jost B.",
+        "institution": "Universität Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 48
+      },
+      {
+        "name": "Feng, Xinliang",
+        "institution": "Technische Universität Dresden",
+        "field": "Enabling & Strategic Technologies",
+        "value": 48
+      },
+      {
+        "name": "Bärnighausen, Till",
+        "institution": "Universität Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 48
+      },
+      {
+        "name": "Mann, Matthias",
+        "institution": "Max-Planck-Institut für Biochemie",
+        "field": "Biomedical Research",
+        "value": 47
+      },
+      {
+        "name": "Ringle, Christian M.",
+        "institution": "Hamburg University of Technology",
+        "field": "Economics & Business",
+        "value": 47
+      },
+      {
+        "name": "Peters, Annette",
+        "institution": "Helmholtz Center Munich German Research Center for Environmental Health",
+        "field": "Clinical Medicine",
+        "value": 47
+      },
+      {
+        "name": "Rinklebe, Jörg",
+        "institution": "Bergische Universität Wuppertal",
+        "field": "Earth & Environmental Sciences",
+        "value": 46
+      },
+      {
+        "name": "Schreiber, Stefan",
+        "institution": "Universitätsklinikum Schleswig-Holstein Campus Kiel",
+        "field": "Clinical Medicine",
+        "value": 46
+      },
+      {
+        "name": "Reck, Martin",
+        "institution": "German Center for Lung Research",
+        "field": "Clinical Medicine",
+        "value": 45
+      },
+      {
+        "name": "Antonietti, Markus",
+        "institution": "Max-Planck-Institut für Kolloid- und Grenzflächenforschung",
+        "field": "Chemistry",
+        "value": 45
+      },
+      {
+        "name": "Müller, Klaus Robert",
+        "institution": "Max Planck Institute for Informatics",
+        "field": "Information & Communication Technologies",
+        "value": 45
+      },
+      {
+        "name": "Raabe, Dierk",
+        "institution": "Max Planck Institute for Sustainable Materials",
+        "field": "Enabling & Strategic Technologies",
+        "value": 44
+      },
+      {
+        "name": "Latz, Eicke",
+        "institution": "Universität Bonn",
+        "field": "Clinical Medicine",
+        "value": 44
+      },
+      {
+        "name": "Ley, Ruth E.",
+        "institution": "Max Planck Campus Tübingen",
+        "field": "Biomedical Research",
+        "value": 43
+      },
+      {
+        "name": "Landmesser, Ulf",
+        "institution": "Charité – Universitätsmedizin Berlin",
+        "field": "Clinical Medicine",
+        "value": 43
+      },
+      {
+        "name": "Kirchhof, Paulus",
+        "institution": "Universitäre Herz- und Gefäßzentrum UKE Hamburg GmbH",
+        "field": "Clinical Medicine",
+        "value": 42
+      },
+      {
+        "name": "Pfister, Stefan M.",
+        "institution": "Universitätsklinikum Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 42
+      }
+    ],
+    "hm": [
+      {
+        "name": "Grimme, Stefan",
+        "institution": "Universität Bonn",
+        "field": "Chemistry",
+        "value": 24.45253623188405
+      },
+      {
+        "name": "Ivanov, Dmitry",
+        "institution": "Hochschule für Wirtschaft und Recht Berlin",
+        "field": "Engineering",
+        "value": 23.88333333333333
+      },
+      {
+        "name": "Raabe, Dierk",
+        "institution": "Max Planck Institute for Sustainable Materials",
+        "field": "Enabling & Strategic Technologies",
+        "value": 23.02364369077923
+      },
+      {
+        "name": "Kuzyakov, Yakov",
+        "institution": "Georg-August-Universität Göttingen",
+        "field": "Agriculture, Fisheries & Forestry",
+        "value": 22.91544940353765
+      },
+      {
+        "name": "Antonietti, Markus",
+        "institution": "Max-Planck-Institut für Kolloid- und Grenzflächenforschung",
+        "field": "Chemistry",
+        "value": 22.81147855795742
+      },
+      {
+        "name": "Winkler, Michael",
+        "institution": "Paderborn University",
+        "field": "Mathematics & Statistics",
+        "value": 22.78333333333333
+      },
+      {
+        "name": "Neese, Frank",
+        "institution": "Max Planck Institute for Coal Research",
+        "field": "Chemistry",
+        "value": 22.44597069597069
+      },
+      {
+        "name": "Mann, Matthias",
+        "institution": "Max-Planck-Institut für Biochemie",
+        "field": "Biomedical Research",
+        "value": 21.96309427290802
+      },
+      {
+        "name": "Feng, Xinliang",
+        "institution": "Technische Universität Dresden",
+        "field": "Enabling & Strategic Technologies",
+        "value": 20.9440673212083
+      },
+      {
+        "name": "Black, Michael J.",
+        "institution": "Max Planck Institute for Intelligent Systems",
+        "field": "Information & Communication Technologies",
+        "value": 20.86666666666666
+      },
+      {
+        "name": "Rinklebe, Jörg",
+        "institution": "Bergische Universität Wuppertal",
+        "field": "Earth & Environmental Sciences",
+        "value": 19.9278102823715
+      },
+      {
+        "name": "Rillig, Matthias C.",
+        "institution": "Freie Universität Berlin",
+        "field": "Biology",
+        "value": 19.90394466747189
+      },
+      {
+        "name": "Fernie, Alisdair R.",
+        "institution": "Max Planck Institute of Molecular Plant Physiology",
+        "field": "Biology",
+        "value": 19.77416692376715
+      },
+      {
+        "name": "Boccaccini, Aldo R.",
+        "institution": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+        "field": "Enabling & Strategic Technologies",
+        "value": 19.74090909090908
+      },
+      {
+        "name": "Sies, Helmut",
+        "institution": "Heinrich-Heine-Universität Düsseldorf",
+        "field": "Biomedical Research",
+        "value": 19.71111111111111
+      },
+      {
+        "name": "Rabczuk, Timon",
+        "institution": "Bauhaus-Universität Weimar",
+        "field": "Mathematics & Statistics",
+        "value": 19.32142857142857
+      },
+      {
+        "name": "Schölkopf, Bernhard",
+        "institution": "Max Planck Institute for Intelligent Systems",
+        "field": "Information & Communication Technologies",
+        "value": 18.9563492063492
+      },
+      {
+        "name": "Pinquart, Martin",
+        "institution": "Philipps-Universität Marburg",
+        "field": "Psychology & Cognitive Sciences",
+        "value": 18.85
+      },
+      {
+        "name": "Müller, Klaus Robert",
+        "institution": "Max Planck Institute for Informatics",
+        "field": "Information & Communication Technologies",
+        "value": 18.46837329337328
+      },
+      {
+        "name": "Cirac, J. Ignacio",
+        "institution": "Max Planck Institute of Quantum Optics",
+        "field": "Physics & Astronomy",
+        "value": 18.32121489621489
+      },
+      {
+        "name": "Sonnentag, Sabine",
+        "institution": "Universität Mannheim",
+        "field": "Economics & Business",
+        "value": 17.99285714285715
+      },
+      {
+        "name": "Beller, Matthias",
+        "institution": "Leibniz Institute for Catalysis",
+        "field": "Chemistry",
+        "value": 17.98691586191585
+      },
+      {
+        "name": "Neurath, Markus F.",
+        "institution": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+        "field": "Clinical Medicine",
+        "value": 17.97508897006759
+      },
+      {
+        "name": "van der Aalst, Wil M.P.",
+        "institution": "Rheinisch-Westfälische Technische Hochschule Aachen",
+        "field": "Information & Communication Technologies",
+        "value": 17.92849841368677
+      },
+      {
+        "name": "Schiele, Bernt",
+        "institution": "Max Planck Institute for Informatics",
+        "field": "Information & Communication Technologies",
+        "value": 17.74206349206349
+      }
+    ],
+    "hmNs": [
+      {
+        "name": "Grimme, Stefan",
+        "institution": "Universität Bonn",
+        "field": "Chemistry",
+        "value": 23.75253623188406
+      },
+      {
+        "name": "Antonietti, Markus",
+        "institution": "Max-Planck-Institut für Kolloid- und Grenzflächenforschung",
+        "field": "Chemistry",
+        "value": 22.94838331986217
+      },
+      {
+        "name": "Raabe, Dierk",
+        "institution": "Max Planck Institute for Sustainable Materials",
+        "field": "Enabling & Strategic Technologies",
+        "value": 22.3193396614752
+      },
+      {
+        "name": "Kuzyakov, Yakov",
+        "institution": "Georg-August-Universität Göttingen",
+        "field": "Agriculture, Fisheries & Forestry",
+        "value": 22.26309342618167
+      },
+      {
+        "name": "Ivanov, Dmitry",
+        "institution": "Hochschule für Wirtschaft und Recht Berlin",
+        "field": "Engineering",
+        "value": 22.05
+      },
+      {
+        "name": "Mann, Matthias",
+        "institution": "Max-Planck-Institut für Biochemie",
+        "field": "Biomedical Research",
+        "value": 21.95958715200959
+      },
+      {
+        "name": "Neese, Frank",
+        "institution": "Max Planck Institute for Coal Research",
+        "field": "Chemistry",
+        "value": 21.92930402930402
+      },
+      {
+        "name": "Winkler, Michael",
+        "institution": "Paderborn University",
+        "field": "Mathematics & Statistics",
+        "value": 21.78333333333333
+      },
+      {
+        "name": "Feng, Xinliang",
+        "institution": "Technische Universität Dresden",
+        "field": "Enabling & Strategic Technologies",
+        "value": 20.17895188109286
+      },
+      {
+        "name": "Black, Michael J.",
+        "institution": "Max Planck Institute for Intelligent Systems",
+        "field": "Information & Communication Technologies",
+        "value": 19.88095238095237
+      },
+      {
+        "name": "Rillig, Matthias C.",
+        "institution": "Freie Universität Berlin",
+        "field": "Biology",
+        "value": 19.6822055370371
+      },
+      {
+        "name": "Sies, Helmut",
+        "institution": "Heinrich-Heine-Universität Düsseldorf",
+        "field": "Biomedical Research",
+        "value": 19.51111111111111
+      },
+      {
+        "name": "Schölkopf, Bernhard",
+        "institution": "Max Planck Institute for Intelligent Systems",
+        "field": "Information & Communication Technologies",
+        "value": 18.86468253968253
+      },
+      {
+        "name": "Rinklebe, Jörg",
+        "institution": "Bergische Universität Wuppertal",
+        "field": "Earth & Environmental Sciences",
+        "value": 18.8442965738578
+      },
+      {
+        "name": "Pinquart, Martin",
+        "institution": "Philipps-Universität Marburg",
+        "field": "Psychology & Cognitive Sciences",
+        "value": 18.75
+      },
+      {
+        "name": "Boccaccini, Aldo R.",
+        "institution": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+        "field": "Enabling & Strategic Technologies",
+        "value": 18.73575036075035
+      },
+      {
+        "name": "Rabczuk, Timon",
+        "institution": "Bauhaus-Universität Weimar",
+        "field": "Mathematics & Statistics",
+        "value": 18.27857142857141
+      },
+      {
+        "name": "Müller, Klaus Robert",
+        "institution": "Max Planck Institute for Informatics",
+        "field": "Information & Communication Technologies",
+        "value": 18.05170662670661
+      },
+      {
+        "name": "Fernie, Alisdair R.",
+        "institution": "Max Planck Institute of Molecular Plant Physiology",
+        "field": "Biology",
+        "value": 17.92659990745014
+      },
+      {
+        "name": "Schiele, Bernt",
+        "institution": "Max Planck Institute for Informatics",
+        "field": "Information & Communication Technologies",
+        "value": 17.90873015873015
+      },
+      {
+        "name": "Cirac, J. Ignacio",
+        "institution": "Max Planck Institute of Quantum Optics",
+        "field": "Physics & Astronomy",
+        "value": 17.57121489621489
+      },
+      {
+        "name": "Beller, Matthias",
+        "institution": "Leibniz Institute for Catalysis",
+        "field": "Chemistry",
+        "value": 17.45870518370518
+      },
+      {
+        "name": "Neurath, Markus F.",
+        "institution": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+        "field": "Clinical Medicine",
+        "value": 17.31356801060868
+      },
+      {
+        "name": "Ringle, Christian M.",
+        "institution": "Hamburg University of Technology",
+        "field": "Economics & Business",
+        "value": 17.02857142857143
+      },
+      {
+        "name": "Hofmann, Stefan G.",
+        "institution": "Philipps-Universität Marburg",
+        "field": "Psychology & Cognitive Sciences",
+        "value": 16.96815066946646
+      }
+    ],
+    "c": [
+      {
+        "name": "Grimme, Stefan",
+        "institution": "Universität Bonn",
+        "field": "Chemistry",
+        "value": 5.139399475252951
+      },
+      {
+        "name": "Neese, Frank",
+        "institution": "Max Planck Institute for Coal Research",
+        "field": "Chemistry",
+        "value": 4.824939848217302
+      },
+      {
+        "name": "Sheldrick, George M.",
+        "institution": "Georg-August-Universität Göttingen",
+        "field": "Chemistry",
+        "value": 4.663715056105379
+      },
+      {
+        "name": "Ivanov, Dmitry",
+        "institution": "Hochschule für Wirtschaft und Recht Berlin",
+        "field": "Engineering",
+        "value": 4.595744769856951
+      },
+      {
+        "name": "Kuzyakov, Yakov",
+        "institution": "Georg-August-Universität Göttingen",
+        "field": "Agriculture, Fisheries & Forestry",
+        "value": 4.521576929144138
+      },
+      {
+        "name": "Rillig, Matthias C.",
+        "institution": "Freie Universität Berlin",
+        "field": "Biology",
+        "value": 4.505992592454646
+      },
+      {
+        "name": "Stamatakis, Alexandros",
+        "institution": "Karlsruher Institut für Technologie",
+        "field": "Information & Communication Technologies",
+        "value": 4.477373499674567
+      },
+      {
+        "name": "Sies, Helmut",
+        "institution": "Heinrich-Heine-Universität Düsseldorf",
+        "field": "Biomedical Research",
+        "value": 4.473265622026479
+      },
+      {
+        "name": "Blöchl, P. E.",
+        "institution": "Technische Universität Clausthal",
+        "field": "Physics & Astronomy",
+        "value": 4.430521375372419
+      },
+      {
+        "name": "Raabe, Dierk",
+        "institution": "Max Planck Institute for Sustainable Materials",
+        "field": "Enabling & Strategic Technologies",
+        "value": 4.419647469761064
+      },
+      {
+        "name": "Springel, Volker",
+        "institution": "Max Planck Institute for Astrophysics",
+        "field": "Physics & Astronomy",
+        "value": 4.41077329177373
+      },
+      {
+        "name": "van der Aalst, Wil M.P.",
+        "institution": "Rheinisch-Westfälische Technische Hochschule Aachen",
+        "field": "Information & Communication Technologies",
+        "value": 4.380040625636643
+      },
+      {
+        "name": "Winkler, Michael",
+        "institution": "Paderborn University",
+        "field": "Mathematics & Statistics",
+        "value": 4.366953926513357
+      },
+      {
+        "name": "Weigend, Florian",
+        "institution": "Philipps-Universität Marburg",
+        "field": "Chemistry",
+        "value": 4.330485997539334
+      },
+      {
+        "name": "Blüher, Matthias",
+        "institution": "Universität Leipzig",
+        "field": "Clinical Medicine",
+        "value": 4.289977407894732
+      },
+      {
+        "name": "Neurath, Markus F.",
+        "institution": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+        "field": "Clinical Medicine",
+        "value": 4.281259464423558
+      },
+      {
+        "name": "Brenner, Hermann",
+        "institution": "German Cancer Research Center",
+        "field": "Clinical Medicine",
+        "value": 4.273731126633021
+      },
+      {
+        "name": "Menter, Florian",
+        "institution": "ANSYS, Inc.",
+        "field": "Engineering",
+        "value": 4.25667856095223
+      },
+      {
+        "name": "Schölkopf, Bernhard",
+        "institution": "Max Planck Institute for Intelligent Systems",
+        "field": "Information & Communication Technologies",
+        "value": 4.226048604760241
+      },
+      {
+        "name": "Mann, Matthias",
+        "institution": "Max-Planck-Institut für Biochemie",
+        "field": "Biomedical Research",
+        "value": 4.210107787356514
+      },
+      {
+        "name": "Ley, Ruth E.",
+        "institution": "Max Planck Campus Tübingen",
+        "field": "Biomedical Research",
+        "value": 4.207168453516092
+      },
+      {
+        "name": "Pinquart, Martin",
+        "institution": "Philipps-Universität Marburg",
+        "field": "Psychology & Cognitive Sciences",
+        "value": 4.198486801431144
+      },
+      {
+        "name": "Sonnentag, Sabine",
+        "institution": "Universität Mannheim",
+        "field": "Economics & Business",
+        "value": 4.184796336370054
+      },
+      {
+        "name": "Hofmann, Stefan G.",
+        "institution": "Philipps-Universität Marburg",
+        "field": "Psychology & Cognitive Sciences",
+        "value": 4.183029736722275
+      },
+      {
+        "name": "Behler, Jörg",
+        "institution": "Ruhr-Universitat Bochum",
+        "field": "Physics & Astronomy",
+        "value": 4.168241971460008
+      }
+    ],
+    "cNs": [
+      {
+        "name": "Grimme, Stefan",
+        "institution": "Universität Bonn",
+        "field": "Chemistry",
+        "value": 5.13591159405176
+      },
+      {
+        "name": "Neese, Frank",
+        "institution": "Max Planck Institute for Coal Research",
+        "field": "Chemistry",
+        "value": 4.826416415578771
+      },
+      {
+        "name": "Sheldrick, George M.",
+        "institution": "Georg-August-Universität Göttingen",
+        "field": "Chemistry",
+        "value": 4.663771740194433
+      },
+      {
+        "name": "Ivanov, Dmitry",
+        "institution": "Hochschule für Wirtschaft und Recht Berlin",
+        "field": "Engineering",
+        "value": 4.564164816301703
+      },
+      {
+        "name": "Rillig, Matthias C.",
+        "institution": "Freie Universität Berlin",
+        "field": "Biology",
+        "value": 4.507130723433889
+      },
+      {
+        "name": "Kuzyakov, Yakov",
+        "institution": "Georg-August-Universität Göttingen",
+        "field": "Agriculture, Fisheries & Forestry",
+        "value": 4.500757342521042
+      },
+      {
+        "name": "Sies, Helmut",
+        "institution": "Heinrich-Heine-Universität Düsseldorf",
+        "field": "Biomedical Research",
+        "value": 4.493905500047893
+      },
+      {
+        "name": "Stamatakis, Alexandros",
+        "institution": "Karlsruher Institut für Technologie",
+        "field": "Information & Communication Technologies",
+        "value": 4.489782008843448
+      },
+      {
+        "name": "Blöchl, P. E.",
+        "institution": "Technische Universität Clausthal",
+        "field": "Physics & Astronomy",
+        "value": 4.416224280712351
+      },
+      {
+        "name": "Raabe, Dierk",
+        "institution": "Max Planck Institute for Sustainable Materials",
+        "field": "Enabling & Strategic Technologies",
+        "value": 4.406363103842211
+      },
+      {
+        "name": "Winkler, Michael",
+        "institution": "Paderborn University",
+        "field": "Mathematics & Statistics",
+        "value": 4.344391715466537
+      },
+      {
+        "name": "Springel, Volker",
+        "institution": "Max Planck Institute for Astrophysics",
+        "field": "Physics & Astronomy",
+        "value": 4.33702116449409
+      },
+      {
+        "name": "Weigend, Florian",
+        "institution": "Philipps-Universität Marburg",
+        "field": "Chemistry",
+        "value": 4.315134660142226
+      },
+      {
+        "name": "van der Aalst, Wil M.P.",
+        "institution": "Rheinisch-Westfälische Technische Hochschule Aachen",
+        "field": "Information & Communication Technologies",
+        "value": 4.308442839847919
+      },
+      {
+        "name": "Blüher, Matthias",
+        "institution": "Universität Leipzig",
+        "field": "Clinical Medicine",
+        "value": 4.285828632895615
+      },
+      {
+        "name": "Menter, Florian",
+        "institution": "ANSYS, Inc.",
+        "field": "Engineering",
+        "value": 4.278535460316237
+      },
+      {
+        "name": "Neurath, Markus F.",
+        "institution": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+        "field": "Clinical Medicine",
+        "value": 4.272024975365227
+      },
+      {
+        "name": "Brenner, Hermann",
+        "institution": "German Cancer Research Center",
+        "field": "Clinical Medicine",
+        "value": 4.25691845245202
+      },
+      {
+        "name": "Mann, Matthias",
+        "institution": "Max-Planck-Institut für Biochemie",
+        "field": "Biomedical Research",
+        "value": 4.227680676001085
+      },
+      {
+        "name": "Schölkopf, Bernhard",
+        "institution": "Max Planck Institute for Intelligent Systems",
+        "field": "Information & Communication Technologies",
+        "value": 4.227188877672665
+      },
+      {
+        "name": "Ley, Ruth E.",
+        "institution": "Max Planck Campus Tübingen",
+        "field": "Biomedical Research",
+        "value": 4.220094538856858
+      },
+      {
+        "name": "Pinquart, Martin",
+        "institution": "Philipps-Universität Marburg",
+        "field": "Psychology & Cognitive Sciences",
+        "value": 4.21799629949918
+      },
+      {
+        "name": "Sonnentag, Sabine",
+        "institution": "Universität Mannheim",
+        "field": "Economics & Business",
+        "value": 4.175006893743568
+      },
+      {
+        "name": "Hofmann, Stefan G.",
+        "institution": "Philipps-Universität Marburg",
+        "field": "Psychology & Cognitive Sciences",
+        "value": 4.17227104256629
+      },
+      {
+        "name": "Schlögl, Robert",
+        "institution": "Fritz Haber Institute of the Max Planck Society",
+        "field": "Chemistry",
+        "value": 4.158518046972386
+      }
+    ],
+    "selfCitePct": [
+      {
+        "name": "Wismüller, Axel",
+        "institution": "Klinikum der Universität München",
+        "field": "Clinical Medicine",
+        "value": 0.8495
+      },
+      {
+        "name": "Dornheim, T.",
+        "institution": "HZDR - Helmholtz-Zentrum Dresden-Rossendorf",
+        "field": "Physics & Astronomy",
+        "value": 0.7798999999999999
+      },
+      {
+        "name": "Moldabekov, Zhandos A.",
+        "institution": "HZDR - Helmholtz-Zentrum Dresden-Rossendorf",
+        "field": "Physics & Astronomy",
+        "value": 0.7347
+      },
+      {
+        "name": "Litvinov, Yu A.",
+        "institution": "GSI Helmholtz Centre for Heavy Ion Research GmbH",
+        "field": "Physics & Astronomy",
+        "value": 0.6747
+      },
+      {
+        "name": "Haug, Joachim T.",
+        "institution": "Ludwig-Maximilians-Universität München",
+        "field": "Earth & Environmental Sciences",
+        "value": 0.6718000000000001
+      },
+      {
+        "name": "Vorberger, J.",
+        "institution": "HZDR - Helmholtz-Zentrum Dresden-Rossendorf",
+        "field": "Physics & Astronomy",
+        "value": 0.6674
+      },
+      {
+        "name": "Schön, J. Christian",
+        "institution": "Max Planck Institute for Solid State Research",
+        "field": "Physics & Astronomy",
+        "value": 0.616
+      },
+      {
+        "name": "Neumann, Joachim",
+        "institution": "Martin-Luther-Universität Halle-Wittenberg",
+        "field": "Clinical Medicine",
+        "value": 0.6017
+      },
+      {
+        "name": "Dönigus, B.",
+        "institution": "Goethe-Universität Frankfurt am Main",
+        "field": "Physics & Astronomy",
+        "value": 0.5938
+      },
+      {
+        "name": "Bilandzic, A.",
+        "institution": "Technische Universität München",
+        "field": "Physics & Astronomy",
+        "value": 0.5855
+      },
+      {
+        "name": "Diederik Kruijssen, J. M.",
+        "institution": "Technische Universität München",
+        "field": "Physics & Astronomy",
+        "value": 0.5778
+      },
+      {
+        "name": "Bigiel, Frank",
+        "institution": "Universität Bonn",
+        "field": "Physics & Astronomy",
+        "value": 0.5777
+      },
+      {
+        "name": "Jirauschek, Christian",
+        "institution": "Technische Universität München",
+        "field": "Physics & Astronomy",
+        "value": 0.5605
+      },
+      {
+        "name": "Lichtenberg, Crispin",
+        "institution": "Philipps-Universität Marburg",
+        "field": "Chemistry",
+        "value": 0.5576
+      },
+      {
+        "name": "Träbert, Elmar",
+        "institution": "Ruhr-Universitat Bochum",
+        "field": "Physics & Astronomy",
+        "value": 0.5532
+      },
+      {
+        "name": "Buchner, Magnus R.",
+        "institution": "Philipps-Universität Marburg",
+        "field": "Chemistry",
+        "value": 0.552
+      },
+      {
+        "name": "Andronic, A.",
+        "institution": "University of Münster",
+        "field": "Physics & Astronomy",
+        "value": 0.55
+      },
+      {
+        "name": "Schmidt, C.",
+        "institution": "GSI Helmholtz Centre for Heavy Ion Research GmbH",
+        "field": "Physics & Astronomy",
+        "value": 0.5444
+      },
+      {
+        "name": "Stachel, J.",
+        "institution": "Universität Heidelberg",
+        "field": "Physics & Astronomy",
+        "value": 0.5432
+      },
+      {
+        "name": "Braun-Munzinger, P.",
+        "institution": "GSI Helmholtz Centre for Heavy Ion Research GmbH",
+        "field": "Physics & Astronomy",
+        "value": 0.5418999999999999
+      },
+      {
+        "name": "Lenske, Horst",
+        "institution": "Justus-Liebig-Universität Gießen",
+        "field": "Physics & Astronomy",
+        "value": 0.5388000000000001
+      },
+      {
+        "name": "Ahrens, Dirk",
+        "institution": "Zoologisches Forschungsmuseum Alexander Koenig",
+        "field": "Biology",
+        "value": 0.5382
+      },
+      {
+        "name": "Ketzer, B.",
+        "institution": "Universität Bonn",
+        "field": "Physics & Astronomy",
+        "value": 0.5364
+      },
+      {
+        "name": "Bonitz, M.",
+        "institution": "Christian-Albrechts-Universität zu Kiel",
+        "field": "Physics & Astronomy",
+        "value": 0.5354
+      },
+      {
+        "name": "Kisel, I.",
+        "institution": "Frankfurt Institute for Advanced Studies",
+        "field": "Physics & Astronomy",
+        "value": 0.5347999999999999
+      }
+    ],
+    "hDelta": [
+      {
+        "name": "Schott, M.",
+        "institution": "Johannes Gutenberg-Universität Mainz",
+        "field": "Physics & Astronomy",
+        "value": 13
+      },
+      {
+        "name": "Siegert, F.",
+        "institution": "Technische Universität Dresden",
+        "field": "Physics & Astronomy",
+        "value": 13
+      },
+      {
+        "name": "Bechtle, P.",
+        "institution": "Universität Bonn",
+        "field": "Physics & Astronomy",
+        "value": 12
+      },
+      {
+        "name": "Bethke, S.",
+        "institution": "Max Planck Institute for Physics (Werner Heisenberg Institute)",
+        "field": "Physics & Astronomy",
+        "value": 12
+      },
+      {
+        "name": "Dutta, B.",
+        "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+        "field": "Physics & Astronomy",
+        "value": 11
+      },
+      {
+        "name": "Schmitt, S.",
+        "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+        "field": "Physics & Astronomy",
+        "value": 11
+      },
+      {
+        "name": "Klanner, R.",
+        "institution": "Universität Hamburg",
+        "field": "Physics & Astronomy",
+        "value": 11
+      },
+      {
+        "name": "Garutti, E.",
+        "institution": "Universität Hamburg",
+        "field": "Physics & Astronomy",
+        "value": 11
+      },
+      {
+        "name": "Bigiel, Frank",
+        "institution": "Universität Bonn",
+        "field": "Physics & Astronomy",
+        "value": 11
+      },
+      {
+        "name": "Becker, M.",
+        "institution": "Technische Universität Dortmund",
+        "field": "Physics & Astronomy",
+        "value": 11
+      },
+      {
+        "name": "Jung, H.",
+        "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+        "field": "Physics & Astronomy",
+        "value": 11
+      },
+      {
+        "name": "Wermes, N.",
+        "institution": "Universität Bonn",
+        "field": "Physics & Astronomy",
+        "value": 11
+      },
+      {
+        "name": "Haller, Johannes",
+        "institution": "Universität Hamburg",
+        "field": "Physics & Astronomy",
+        "value": 11
+      },
+      {
+        "name": "Erdmann, J.",
+        "institution": "Technische Universität Dortmund",
+        "field": "Physics & Astronomy",
+        "value": 11
+      },
+      {
+        "name": "Britzger, D.",
+        "institution": "Max Planck Institute for Physics (Werner Heisenberg Institute)",
+        "field": "Physics & Astronomy",
+        "value": 11
+      },
+      {
+        "name": "Diederik Kruijssen, J. M.",
+        "institution": "Technische Universität München",
+        "field": "Physics & Astronomy",
+        "value": 10
+      },
+      {
+        "name": "Kasieczka, Gregor",
+        "institution": "Universität Hamburg",
+        "field": "Physics & Astronomy",
+        "value": 10
+      },
+      {
+        "name": "Schumann, S.",
+        "institution": "Georg-August-Universität Göttingen",
+        "field": "Physics & Astronomy",
+        "value": 10
+      },
+      {
+        "name": "De Boer, W.",
+        "institution": "Karlsruher Institut für Technologie",
+        "field": "Physics & Astronomy",
+        "value": 10
+      },
+      {
+        "name": "Schinnerer, Eva",
+        "institution": "Max Planck Institute for Astronomy",
+        "field": "Physics & Astronomy",
+        "value": 10
+      },
+      {
+        "name": "Blobel, V.",
+        "institution": "Universität Hamburg",
+        "field": "Physics & Astronomy",
+        "value": 10
+      },
+      {
+        "name": "Singh, Amandeep",
+        "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+        "field": "Physics & Astronomy",
+        "value": 10
+      },
+      {
+        "name": "Erdmann, M.",
+        "institution": "Rheinisch-Westfälische Technische Hochschule Aachen",
+        "field": "Physics & Astronomy",
+        "value": 10
+      },
+      {
+        "name": "Schmidt, C.",
+        "institution": "GSI Helmholtz Centre for Heavy Ion Research GmbH",
+        "field": "Physics & Astronomy",
+        "value": 10
+      },
+      {
+        "name": "Kogler, R.",
+        "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+        "field": "Physics & Astronomy",
+        "value": 10
+      }
+    ],
+    "hDeltaPct": [
+      {
+        "name": "Moldabekov, Zhandos A.",
+        "institution": "HZDR - Helmholtz-Zentrum Dresden-Rossendorf",
+        "field": "Physics & Astronomy",
+        "value": 0.6153846153846154
+      },
+      {
+        "name": "Dornheim, T.",
+        "institution": "HZDR - Helmholtz-Zentrum Dresden-Rossendorf",
+        "field": "Physics & Astronomy",
+        "value": 0.6
+      },
+      {
+        "name": "Wismüller, Axel",
+        "institution": "Klinikum der Universität München",
+        "field": "Clinical Medicine",
+        "value": 0.6
+      },
+      {
+        "name": "Bonitz, M.",
+        "institution": "Christian-Albrechts-Universität zu Kiel",
+        "field": "Physics & Astronomy",
+        "value": 0.5333333333333333
+      },
+      {
+        "name": "Vorberger, J.",
+        "institution": "HZDR - Helmholtz-Zentrum Dresden-Rossendorf",
+        "field": "Physics & Astronomy",
+        "value": 0.5333333333333333
+      },
+      {
+        "name": "Wolf, R. C.",
+        "institution": "Max Planck Institute for Plasma Physics",
+        "field": "Physics & Astronomy",
+        "value": 0.5
+      },
+      {
+        "name": "Lichtenberg, Crispin",
+        "institution": "Philipps-Universität Marburg",
+        "field": "Chemistry",
+        "value": 0.5
+      },
+      {
+        "name": "Haug, Joachim T.",
+        "institution": "Ludwig-Maximilians-Universität München",
+        "field": "Earth & Environmental Sciences",
+        "value": 0.5
+      },
+      {
+        "name": "Bigiel, Frank",
+        "institution": "Universität Bonn",
+        "field": "Physics & Astronomy",
+        "value": 0.4583333333333333
+      },
+      {
+        "name": "Buchner, Magnus R.",
+        "institution": "Philipps-Universität Marburg",
+        "field": "Chemistry",
+        "value": 0.4444444444444444
+      },
+      {
+        "name": "Jirauschek, Christian",
+        "institution": "Technische Universität München",
+        "field": "Physics & Astronomy",
+        "value": 0.42857142857142855
+      },
+      {
+        "name": "Anders, Jens",
+        "institution": "Universität Stuttgart",
+        "field": "Engineering",
+        "value": 0.42857142857142855
+      },
+      {
+        "name": "Chung, S. U.",
+        "institution": "Technische Universität München",
+        "field": "Physics & Astronomy",
+        "value": 0.42105263157894735
+      },
+      {
+        "name": "Diederik Kruijssen, J. M.",
+        "institution": "Technische Universität München",
+        "field": "Physics & Astronomy",
+        "value": 0.4166666666666667
+      },
+      {
+        "name": "Mayer, M.",
+        "institution": "Max Planck Institute for Plasma Physics",
+        "field": "Physics & Astronomy",
+        "value": 0.4166666666666667
+      },
+      {
+        "name": "Schmidt, C.",
+        "institution": "GSI Helmholtz Centre for Heavy Ion Research GmbH",
+        "field": "Physics & Astronomy",
+        "value": 0.4166666666666667
+      },
+      {
+        "name": "Stephan, Simon",
+        "institution": "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau",
+        "field": "Physics & Astronomy",
+        "value": 0.4166666666666667
+      },
+      {
+        "name": "Scheer, Manfred",
+        "institution": "Universität Regensburg",
+        "field": "Chemistry",
+        "value": 0.4
+      },
+      {
+        "name": "Dönigus, B.",
+        "institution": "Goethe-Universität Frankfurt am Main",
+        "field": "Physics & Astronomy",
+        "value": 0.4
+      },
+      {
+        "name": "Pietschnig, R.",
+        "institution": "Universität Kassel",
+        "field": "Chemistry",
+        "value": 0.4
+      },
+      {
+        "name": "Marquardt, Gesine",
+        "institution": "Technische Universität Dresden",
+        "field": "Public Health & Health Services",
+        "value": 0.4
+      },
+      {
+        "name": "Junghanss, Thomas",
+        "institution": "Universitätsklinikum Heidelberg",
+        "field": "Clinical Medicine",
+        "value": 0.4
+      },
+      {
+        "name": "Franzke, Yannick J.",
+        "institution": "Friedrich-Schiller-Universität Jena",
+        "field": "Physics & Astronomy",
+        "value": 0.4
+      },
+      {
+        "name": "Lenske, Horst",
+        "institution": "Justus-Liebig-Universität Gießen",
+        "field": "Physics & Astronomy",
+        "value": 0.4
+      },
+      {
+        "name": "Habib, M. K.",
+        "institution": "GSI Helmholtz Centre for Heavy Ion Research GmbH",
+        "field": "Physics & Astronomy",
+        "value": 0.3888888888888889
+      }
+    ]
+  },
+  "topHDelta": [
+    {
+      "name": "Schott, M.",
+      "institution": "Johannes Gutenberg-Universität Mainz",
+      "field": "Physics & Astronomy",
+      "value": 13
+    },
+    {
+      "name": "Siegert, F.",
+      "institution": "Technische Universität Dresden",
+      "field": "Physics & Astronomy",
+      "value": 13
+    },
+    {
+      "name": "Bechtle, P.",
+      "institution": "Universität Bonn",
+      "field": "Physics & Astronomy",
+      "value": 12
+    },
+    {
+      "name": "Bethke, S.",
+      "institution": "Max Planck Institute for Physics (Werner Heisenberg Institute)",
+      "field": "Physics & Astronomy",
+      "value": 12
+    },
+    {
+      "name": "Dutta, B.",
+      "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+      "field": "Physics & Astronomy",
+      "value": 11
+    },
+    {
+      "name": "Schmitt, S.",
+      "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+      "field": "Physics & Astronomy",
+      "value": 11
+    },
+    {
+      "name": "Klanner, R.",
+      "institution": "Universität Hamburg",
+      "field": "Physics & Astronomy",
+      "value": 11
+    },
+    {
+      "name": "Garutti, E.",
+      "institution": "Universität Hamburg",
+      "field": "Physics & Astronomy",
+      "value": 11
+    },
+    {
+      "name": "Bigiel, Frank",
+      "institution": "Universität Bonn",
+      "field": "Physics & Astronomy",
+      "value": 11
+    },
+    {
+      "name": "Becker, M.",
+      "institution": "Technische Universität Dortmund",
+      "field": "Physics & Astronomy",
+      "value": 11
+    },
+    {
+      "name": "Jung, H.",
+      "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+      "field": "Physics & Astronomy",
+      "value": 11
+    },
+    {
+      "name": "Wermes, N.",
+      "institution": "Universität Bonn",
+      "field": "Physics & Astronomy",
+      "value": 11
+    },
+    {
+      "name": "Haller, Johannes",
+      "institution": "Universität Hamburg",
+      "field": "Physics & Astronomy",
+      "value": 11
+    },
+    {
+      "name": "Erdmann, J.",
+      "institution": "Technische Universität Dortmund",
+      "field": "Physics & Astronomy",
+      "value": 11
+    },
+    {
+      "name": "Britzger, D.",
+      "institution": "Max Planck Institute for Physics (Werner Heisenberg Institute)",
+      "field": "Physics & Astronomy",
+      "value": 11
+    },
+    {
+      "name": "Diederik Kruijssen, J. M.",
+      "institution": "Technische Universität München",
+      "field": "Physics & Astronomy",
+      "value": 10
+    },
+    {
+      "name": "Kasieczka, Gregor",
+      "institution": "Universität Hamburg",
+      "field": "Physics & Astronomy",
+      "value": 10
+    },
+    {
+      "name": "Schumann, S.",
+      "institution": "Georg-August-Universität Göttingen",
+      "field": "Physics & Astronomy",
+      "value": 10
+    },
+    {
+      "name": "De Boer, W.",
+      "institution": "Karlsruher Institut für Technologie",
+      "field": "Physics & Astronomy",
+      "value": 10
+    },
+    {
+      "name": "Schinnerer, Eva",
+      "institution": "Max Planck Institute for Astronomy",
+      "field": "Physics & Astronomy",
+      "value": 10
+    },
+    {
+      "name": "Blobel, V.",
+      "institution": "Universität Hamburg",
+      "field": "Physics & Astronomy",
+      "value": 10
+    },
+    {
+      "name": "Singh, Amandeep",
+      "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+      "field": "Physics & Astronomy",
+      "value": 10
+    },
+    {
+      "name": "Erdmann, M.",
+      "institution": "Rheinisch-Westfälische Technische Hochschule Aachen",
+      "field": "Physics & Astronomy",
+      "value": 10
+    },
+    {
+      "name": "Schmidt, C.",
+      "institution": "GSI Helmholtz Centre for Heavy Ion Research GmbH",
+      "field": "Physics & Astronomy",
+      "value": 10
+    },
+    {
+      "name": "Kogler, R.",
+      "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+      "field": "Physics & Astronomy",
+      "value": 10
+    }
+  ],
+  "topHDeltaPct": [
+    {
+      "name": "Bigiel, Frank",
+      "institution": "Universität Bonn",
+      "field": "Physics & Astronomy",
+      "value": 0.4583333333333333
+    },
+    {
+      "name": "Diederik Kruijssen, J. M.",
+      "institution": "Technische Universität München",
+      "field": "Physics & Astronomy",
+      "value": 0.4166666666666667
+    },
+    {
+      "name": "Schmidt, C.",
+      "institution": "GSI Helmholtz Centre for Heavy Ion Research GmbH",
+      "field": "Physics & Astronomy",
+      "value": 0.4166666666666667
+    },
+    {
+      "name": "Dönigus, B.",
+      "institution": "Goethe-Universität Frankfurt am Main",
+      "field": "Physics & Astronomy",
+      "value": 0.4
+    },
+    {
+      "name": "Schinnerer, Eva",
+      "institution": "Max Planck Institute for Astronomy",
+      "field": "Physics & Astronomy",
+      "value": 0.38461538461538464
+    },
+    {
+      "name": "Singh, Amandeep",
+      "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+      "field": "Physics & Astronomy",
+      "value": 0.38461538461538464
+    },
+    {
+      "name": "Siegert, F.",
+      "institution": "Technische Universität Dresden",
+      "field": "Physics & Astronomy",
+      "value": 0.38235294117647056
+    },
+    {
+      "name": "Bilandzic, A.",
+      "institution": "Technische Universität München",
+      "field": "Physics & Astronomy",
+      "value": 0.38095238095238093
+    },
+    {
+      "name": "Kreidberg, Laura",
+      "institution": "Max Planck Institute for Astronomy",
+      "field": "Physics & Astronomy",
+      "value": 0.375
+    },
+    {
+      "name": "Glover, Simon C.O.",
+      "institution": "Universität Heidelberg",
+      "field": "Physics & Astronomy",
+      "value": 0.375
+    },
+    {
+      "name": "Erdmann, M.",
+      "institution": "Rheinisch-Westfälische Technische Hochschule Aachen",
+      "field": "Physics & Astronomy",
+      "value": 0.37037037037037035
+    },
+    {
+      "name": "Dutta, B.",
+      "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+      "field": "Physics & Astronomy",
+      "value": 0.36666666666666664
+    },
+    {
+      "name": "Garutti, E.",
+      "institution": "Universität Hamburg",
+      "field": "Physics & Astronomy",
+      "value": 0.36666666666666664
+    },
+    {
+      "name": "Schott, M.",
+      "institution": "Johannes Gutenberg-Universität Mainz",
+      "field": "Physics & Astronomy",
+      "value": 0.3611111111111111
+    },
+    {
+      "name": "Andronic, A.",
+      "institution": "University of Münster",
+      "field": "Physics & Astronomy",
+      "value": 0.36
+    },
+    {
+      "name": "Schumann, S.",
+      "institution": "Georg-August-Universität Göttingen",
+      "field": "Physics & Astronomy",
+      "value": 0.35714285714285715
+    },
+    {
+      "name": "Blobel, V.",
+      "institution": "Universität Hamburg",
+      "field": "Physics & Astronomy",
+      "value": 0.35714285714285715
+    },
+    {
+      "name": "Schmitt, S.",
+      "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+      "field": "Physics & Astronomy",
+      "value": 0.3548387096774194
+    },
+    {
+      "name": "Klanner, R.",
+      "institution": "Universität Hamburg",
+      "field": "Physics & Astronomy",
+      "value": 0.3548387096774194
+    },
+    {
+      "name": "Jung, H.",
+      "institution": "Deutsches Elektronen-Synchrotron (DESY)",
+      "field": "Physics & Astronomy",
+      "value": 0.3548387096774194
+    },
+    {
+      "name": "Haller, Johannes",
+      "institution": "Universität Hamburg",
+      "field": "Physics & Astronomy",
+      "value": 0.3548387096774194
+    },
+    {
+      "name": "Erdmann, J.",
+      "institution": "Technische Universität Dortmund",
+      "field": "Physics & Astronomy",
+      "value": 0.3548387096774194
+    },
+    {
+      "name": "Bethke, S.",
+      "institution": "Max Planck Institute for Physics (Werner Heisenberg Institute)",
+      "field": "Physics & Astronomy",
+      "value": 0.35294117647058826
+    },
+    {
+      "name": "Gundacker, Stefan",
+      "institution": "Rheinisch-Westfälische Technische Hochschule Aachen",
+      "field": "Physics & Astronomy",
+      "value": 0.35
+    },
+    {
+      "name": "Heng, Kevin",
+      "institution": "Ludwig-Maximilians-Universität München",
+      "field": "Physics & Astronomy",
+      "value": 0.34782608695652173
+    }
+  ],
+  "topSelfCitePct": [
+    {
+      "name": "Wismüller, Axel",
+      "institution": "Klinikum der Universität München",
+      "field": "Clinical Medicine",
+      "value": 0.8495
+    },
+    {
+      "name": "Dornheim, T.",
+      "institution": "HZDR - Helmholtz-Zentrum Dresden-Rossendorf",
+      "field": "Physics & Astronomy",
+      "value": 0.7798999999999999
+    },
+    {
+      "name": "Moldabekov, Zhandos A.",
+      "institution": "HZDR - Helmholtz-Zentrum Dresden-Rossendorf",
+      "field": "Physics & Astronomy",
+      "value": 0.7347
+    },
+    {
+      "name": "Litvinov, Yu A.",
+      "institution": "GSI Helmholtz Centre for Heavy Ion Research GmbH",
+      "field": "Physics & Astronomy",
+      "value": 0.6747
+    },
+    {
+      "name": "Haug, Joachim T.",
+      "institution": "Ludwig-Maximilians-Universität München",
+      "field": "Earth & Environmental Sciences",
+      "value": 0.6718000000000001
+    },
+    {
+      "name": "Vorberger, J.",
+      "institution": "HZDR - Helmholtz-Zentrum Dresden-Rossendorf",
+      "field": "Physics & Astronomy",
+      "value": 0.6674
+    },
+    {
+      "name": "Schön, J. Christian",
+      "institution": "Max Planck Institute for Solid State Research",
+      "field": "Physics & Astronomy",
+      "value": 0.616
+    },
+    {
+      "name": "Neumann, Joachim",
+      "institution": "Martin-Luther-Universität Halle-Wittenberg",
+      "field": "Clinical Medicine",
+      "value": 0.6017
+    },
+    {
+      "name": "Dönigus, B.",
+      "institution": "Goethe-Universität Frankfurt am Main",
+      "field": "Physics & Astronomy",
+      "value": 0.5938
+    },
+    {
+      "name": "Bilandzic, A.",
+      "institution": "Technische Universität München",
+      "field": "Physics & Astronomy",
+      "value": 0.5855
+    },
+    {
+      "name": "Diederik Kruijssen, J. M.",
+      "institution": "Technische Universität München",
+      "field": "Physics & Astronomy",
+      "value": 0.5778
+    },
+    {
+      "name": "Bigiel, Frank",
+      "institution": "Universität Bonn",
+      "field": "Physics & Astronomy",
+      "value": 0.5777
+    },
+    {
+      "name": "Jirauschek, Christian",
+      "institution": "Technische Universität München",
+      "field": "Physics & Astronomy",
+      "value": 0.5605
+    },
+    {
+      "name": "Lichtenberg, Crispin",
+      "institution": "Philipps-Universität Marburg",
+      "field": "Chemistry",
+      "value": 0.5576
+    },
+    {
+      "name": "Träbert, Elmar",
+      "institution": "Ruhr-Universitat Bochum",
+      "field": "Physics & Astronomy",
+      "value": 0.5532
+    },
+    {
+      "name": "Buchner, Magnus R.",
+      "institution": "Philipps-Universität Marburg",
+      "field": "Chemistry",
+      "value": 0.552
+    },
+    {
+      "name": "Andronic, A.",
+      "institution": "University of Münster",
+      "field": "Physics & Astronomy",
+      "value": 0.55
+    },
+    {
+      "name": "Schmidt, C.",
+      "institution": "GSI Helmholtz Centre for Heavy Ion Research GmbH",
+      "field": "Physics & Astronomy",
+      "value": 0.5444
+    },
+    {
+      "name": "Stachel, J.",
+      "institution": "Universität Heidelberg",
+      "field": "Physics & Astronomy",
+      "value": 0.5432
+    },
+    {
+      "name": "Braun-Munzinger, P.",
+      "institution": "GSI Helmholtz Centre for Heavy Ion Research GmbH",
+      "field": "Physics & Astronomy",
+      "value": 0.5418999999999999
+    },
+    {
+      "name": "Lenske, Horst",
+      "institution": "Justus-Liebig-Universität Gießen",
+      "field": "Physics & Astronomy",
+      "value": 0.5388000000000001
+    },
+    {
+      "name": "Ahrens, Dirk",
+      "institution": "Zoologisches Forschungsmuseum Alexander Koenig",
+      "field": "Biology",
+      "value": 0.5382
+    },
+    {
+      "name": "Ketzer, B.",
+      "institution": "Universität Bonn",
+      "field": "Physics & Astronomy",
+      "value": 0.5364
+    },
+    {
+      "name": "Bonitz, M.",
+      "institution": "Christian-Albrechts-Universität zu Kiel",
+      "field": "Physics & Astronomy",
+      "value": 0.5354
+    },
+    {
+      "name": "Kisel, I.",
+      "institution": "Frankfurt Institute for Advanced Studies",
+      "field": "Physics & Astronomy",
+      "value": 0.5347999999999999
+    }
+  ],
+  "fieldBreakdown": [
+    {
+      "field": "Clinical Medicine",
+      "count": 3504,
+      "medianH": 13,
+      "medianHNs": 12,
+      "medianSelfPct": 0.1202
+    },
+    {
+      "field": "Physics & Astronomy",
+      "count": 1509,
+      "medianH": 12,
+      "medianHNs": 11,
+      "medianSelfPct": 0.1447
+    },
+    {
+      "field": "Biomedical Research",
+      "count": 968,
+      "medianH": 13,
+      "medianHNs": 12,
+      "medianSelfPct": 0.0915
+    },
+    {
+      "field": "Chemistry",
+      "count": 775,
+      "medianH": 10,
+      "medianHNs": 10,
+      "medianSelfPct": 0.1082
+    },
+    {
+      "field": "Enabling & Strategic Technologies",
+      "count": 665,
+      "medianH": 11,
+      "medianHNs": 11,
+      "medianSelfPct": 0.1001
+    },
+    {
+      "field": "Biology",
+      "count": 519,
+      "medianH": 13,
+      "medianHNs": 12,
+      "medianSelfPct": 0.1118
+    },
+    {
+      "field": "Engineering",
+      "count": 488,
+      "medianH": 10,
+      "medianHNs": 10,
+      "medianSelfPct": 0.1111
+    },
+    {
+      "field": "Information & Communication Technologies",
+      "count": 450,
+      "medianH": 11,
+      "medianHNs": 10,
+      "medianSelfPct": 0.08439999999999999
+    },
+    {
+      "field": "Earth & Environmental Sciences",
+      "count": 423,
+      "medianH": 13,
+      "medianHNs": 12,
+      "medianSelfPct": 0.1223
+    },
+    {
+      "field": "Agriculture, Fisheries & Forestry",
+      "count": 259,
+      "medianH": 11,
+      "medianHNs": 10,
+      "medianSelfPct": 0.1067
+    },
+    {
+      "field": "Psychology & Cognitive Sciences",
+      "count": 196,
+      "medianH": 12,
+      "medianHNs": 11,
+      "medianSelfPct": 0.1026
+    },
+    {
+      "field": "Economics & Business",
+      "count": 176,
+      "medianH": 11,
+      "medianHNs": 11,
+      "medianSelfPct": 0.0392
+    },
+    {
+      "field": "Social Sciences",
+      "count": 164,
+      "medianH": 9,
+      "medianHNs": 9,
+      "medianSelfPct": 0.0587
+    },
+    {
+      "field": "Mathematics & Statistics",
+      "count": 150,
+      "medianH": 8,
+      "medianHNs": 7,
+      "medianSelfPct": 0.1062
+    },
+    {
+      "field": "Historical Studies",
+      "count": 44,
+      "medianH": 6,
+      "medianHNs": 5,
+      "medianSelfPct": 0.117
+    },
+    {
+      "field": "Communication & Textual Studies",
+      "count": 41,
+      "medianH": 9,
+      "medianHNs": 9,
+      "medianSelfPct": 0.0489
+    },
+    {
+      "field": "Public Health & Health Services",
+      "count": 37,
+      "medianH": 10,
+      "medianHNs": 9,
+      "medianSelfPct": 0.1135
+    },
+    {
+      "field": "Built Environment & Design",
+      "count": 34,
+      "medianH": 14,
+      "medianHNs": 13,
+      "medianSelfPct": 0.09369999999999999
+    },
+    {
+      "field": "Philosophy & Theology",
+      "count": 13,
+      "medianH": 7,
+      "medianHNs": 6,
+      "medianSelfPct": 0.0403
+    },
+    {
+      "field": "Visual & Performing Arts",
+      "count": 5,
+      "medianH": 3,
+      "medianHNs": 3,
+      "medianSelfPct": 0.0435
+    }
+  ]
+}

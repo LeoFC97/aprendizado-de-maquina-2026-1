@@ -1,0 +1,20 @@
+# Raw dataset — 86MB, fetch externally
+*.xlsx
+
+# Generated artifacts (regeneráveis pelos scripts)
+dashboard/data/*.csv
+
+# Node
+node_modules/
+
+# Next.js
+dashboard/.next/
+dashboard/out/
+next-env.d.ts
+
+# Logs
+*.log
+.DS_Store
+
+# Env
+.env*.local
