@@ -204,12 +204,12 @@ function ResidualsTable({ residuals }: { residuals: OutlierResidual[] }) {
             <tr>
               <Th>Autor</Th>
               <Th>Instituição · Área</Th>
-              <Th align="right" onClick={() => sort("yearsActive")} active={sortKey === "yearsActive"} dir={sortDir}>anos</Th>
-              <Th align="right" onClick={() => sort("selfPct")} active={sortKey === "selfPct"} dir={sortDir}>self%</Th>
-              <Th align="right" onClick={() => sort("nc")} active={sortKey === "nc"} dir={sortDir}>nc</Th>
-              <Th align="right" onClick={() => sort("ncNs")} active={sortKey === "ncNs"} dir={sortDir}>nc(ns)</Th>
-              <Th align="right" onClick={() => sort("predicted")} active={sortKey === "predicted"} dir={sortDir}>ŷ</Th>
-              <Th align="right" onClick={() => sort("residual")} active={sortKey === "residual"} dir={sortDir}>resíduo</Th>
+              <Th align="right" onClick={() => sort("yearsActive")} active={sortKey === "yearsActive"} dir={sortDir}>Anos de carreira (anos)</Th>
+              <Th align="right" onClick={() => sort("selfPct")} active={sortKey === "selfPct"} dir={sortDir}>Auto-citação (self%)</Th>
+              <Th align="right" onClick={() => sort("nc")} active={sortKey === "nc"} dir={sortDir}>Citações com auto-cit. (nc)</Th>
+              <Th align="right" onClick={() => sort("ncNs")} active={sortKey === "ncNs"} dir={sortDir}>Citações sem auto-cit. (nc ns)</Th>
+              <Th align="right" onClick={() => sort("predicted")} active={sortKey === "predicted"} dir={sortDir}>Previsto (ŷ)</Th>
+              <Th align="right" onClick={() => sort("residual")} active={sortKey === "residual"} dir={sortDir}>Resíduo</Th>
             </tr>
           </thead>
           <tbody>

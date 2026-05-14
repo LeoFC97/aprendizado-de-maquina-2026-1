@@ -52,11 +52,18 @@ export function HistogramH({ authors }: { authors: SlimAuthor[] }) {
 
   return (
     <ChartCard title="Distribuição de h-index" subtitle="Com auto-citações vs sem">
-      <ResponsiveContainer width="100%" height={260}>
-        <BarChart data={data} barGap={2}>
+      <ResponsiveContainer width="100%" height={280}>
+        <BarChart data={data} barGap={2} margin={{ top: 5, right: 10, left: 10, bottom: 20 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="currentColor" opacity={0.1} />
-          <XAxis dataKey="bin" tick={AXIS_TICK} />
-          <YAxis tick={AXIS_TICK} />
+          <XAxis
+            dataKey="bin"
+            tick={AXIS_TICK}
+            label={{ value: "h-index", position: "insideBottom", offset: -10, fontSize: 11, fill: "currentColor" }}
+          />
+          <YAxis
+            tick={AXIS_TICK}
+            label={{ value: "Nº de autores", angle: -90, position: "insideLeft", offset: 10, fontSize: 11, fill: "currentColor" }}
+          />
           <Tooltip
             cursor={{ fill: "currentColor", opacity: 0.05 }}
             contentStyle={tooltipStyle}
@@ -79,15 +86,19 @@ export function HistogramSelf({ authors }: { authors: SlimAuthor[] }) {
 
   return (
     <ChartCard title="Distribuição de auto-citação (%)" subtitle="self% por autor">
-      <ResponsiveContainer width="100%" height={260}>
-        <BarChart data={data}>
+      <ResponsiveContainer width="100%" height={280}>
+        <BarChart data={data} margin={{ top: 5, right: 10, left: 10, bottom: 20 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="currentColor" opacity={0.1} />
           <XAxis
             dataKey="bin"
             tick={AXIS_TICK}
             tickFormatter={(v: string) => `${(Number(v) * 100).toFixed(0)}%`}
+            label={{ value: "% de auto-citação (self%)", position: "insideBottom", offset: -10, fontSize: 11, fill: "currentColor" }}
           />
-          <YAxis tick={AXIS_TICK} />
+          <YAxis
+            tick={AXIS_TICK}
+            label={{ value: "Nº de autores", angle: -90, position: "insideLeft", offset: 10, fontSize: 11, fill: "currentColor" }}
+          />
           <Tooltip
             cursor={{ fill: "currentColor", opacity: 0.05 }}
             contentStyle={tooltipStyle}

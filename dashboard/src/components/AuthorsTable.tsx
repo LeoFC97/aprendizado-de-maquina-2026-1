@@ -8,13 +8,13 @@ type SortKey = keyof Pick<SlimAuthor, "h" | "hNs" | "hDelta" | "hDeltaPct" | "se
 type SortDir = "asc" | "desc";
 
 const COLUMNS: { key: SortKey; label: string; format: (v: number) => string }[] = [
-  { key: "np", label: "np", format: (v) => fmt(v, 0) },
-  { key: "h", label: "h", format: (v) => fmt(v, 0) },
-  { key: "hNs", label: "h (ns)", format: (v) => fmt(v, 0) },
-  { key: "hDelta", label: "Δh", format: (v) => fmt(v, 0) },
-  { key: "hDeltaPct", label: "Δh %", format: pct },
-  { key: "selfPct", label: "self%", format: pct },
-  { key: "c", label: "c-score", format: (v) => fmt(v, 2) },
+  { key: "np", label: "Nº de publicações (np)", format: (v) => fmt(v, 0) },
+  { key: "h", label: "h-index com auto-cit. (h)", format: (v) => fmt(v, 0) },
+  { key: "hNs", label: "h-index sem auto-cit. (h ns)", format: (v) => fmt(v, 0) },
+  { key: "hDelta", label: "Queda absoluta de h (Δh)", format: (v) => fmt(v, 0) },
+  { key: "hDeltaPct", label: "Queda relativa de h (Δh %)", format: pct },
+  { key: "selfPct", label: "Auto-citação (self%)", format: pct },
+  { key: "c", label: "Composite score (c)", format: (v) => fmt(v, 2) },
 ];
 
 const PAGE_SIZE = 25;
