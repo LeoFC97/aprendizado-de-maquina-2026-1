@@ -136,18 +136,7 @@ export function RegressionPanel({ authors, regression, residuals }: Props) {
             />
             <Tooltip
               cursor={{ strokeDasharray: "3 3" }}
-              contentStyle={{
-                background: "rgb(24 24 27)",
-                border: "1px solid rgb(63 63 70)",
-                borderRadius: 6,
-                color: "rgb(244 244 245)",
-                fontSize: 12,
-              }}
-              formatter={(v, n) => [typeof v === "number" ? fmt(v, 0) : v, n]}
-              labelFormatter={(_, p) => {
-                const point = (p as unknown as ReadonlyArray<{ payload?: { name?: string; x?: number } }> | undefined)?.[0]?.payload;
-                return point?.name ? `${point.name} · ${point.x} anos` : "";
-              }}
+              content={<ScatterTooltip regression={regression} />}
             />
             <Legend wrapperStyle={{ fontSize: 12, paddingTop: 10 }} />
             <Scatter
@@ -181,6 +170,68 @@ export function RegressionPanel({ authors, regression, residuals }: Props) {
       </div>
 
       <ResidualsTable residuals={residuals} />
+    </div>
+  );
+}
+
+type ScatterPayload = {
+  name?: string;
+  x?: number;
+  y?: number;
+};
+
+type TooltipEntry = { payload?: ScatterPayload };
+
+type ScatterTooltipProps = {
+  active?: boolean;
+  payload?: TooltipEntry[];
+  regression: RegressionResult;
+};
+
+function ScatterTooltip({ active, payload, regression }: ScatterTooltipProps) {
+  if (!active || !payload || payload.length === 0) return null;
+
+  const candidates = payload
+    .map((entry) => entry.payload)
+    .filter((p): p is ScatterPayload => !!p && typeof p.x === "number" && typeof p.y === "number");
+  if (candidates.length === 0) return null;
+
+  // Recharts feeds one entry per series under the cursor (gray + red + line).
+  // Pick the scatter point (line entries have no name) so we never mix authors.
+  const point = candidates.find((c) => !!c.name) ?? candidates[0];
+
+  if (point.x === undefined || point.y === undefined) return null;
+
+  const predicted = regression.a + regression.b * point.x;
+  const residual = point.y - predicted;
+  const isAbove = residual >= 0;
+
+  return (
+    <div
+      style={{
+        background: "rgb(24 24 27)",
+        border: "1px solid rgb(63 63 70)",
+        borderRadius: 6,
+        color: "rgb(244 244 245)",
+        fontSize: 12,
+        padding: "8px 10px",
+        maxWidth: 280,
+      }}
+    >
+      <div style={{ fontWeight: 600, marginBottom: 4 }}>
+        {point.name ?? "Autor"}
+      </div>
+      <div style={{ color: "rgb(161 161 170)", marginBottom: 6 }}>
+        {point.x} anos de carreira
+      </div>
+      <div>Citações (sem auto): <strong>{fmt(point.y, 0)}</strong></div>
+      <div style={{ color: "rgb(161 161 170)" }}>
+        Esperado pela reta: {fmt(predicted, 0)}
+      </div>
+      <div style={{ marginTop: 4, color: isAbove ? "#34d399" : "#fb7185" }}>
+        {isAbove ? "+" : ""}
+        {fmt(residual, 0)} {isAbove ? "acima" : "abaixo"} do esperado
+      </div>
     </div>
   );
 }
