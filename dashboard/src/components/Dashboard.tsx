@@ -189,12 +189,19 @@ export function Dashboard({ authors, report }: Props) {
 
       <section className="mb-8">
         <h2 className="mb-3 text-xl font-semibold tracking-tight">
-          Regressão linear: citações (sem auto) ~ anos de carreira
+          Quanto cada ano de carreira costuma render em citações?
         </h2>
-        <p className="mb-3 text-xs text-zinc-500">
-          Modelo y = a + b·x ajustado por OLS após descartar os {report.regression.droppedCount} outliers de self%
-          (autores com auto-citação acima da cerca IQR). Em seguida calculamos, para cada outlier descartado, o resíduo
-          contra suas citações <strong>com</strong> auto-citação.
+        <p className="mb-3 text-sm text-zinc-600 dark:text-zinc-400">
+          <strong>Ideia:</strong> traçar uma reta que descreve o autor médio &mdash; quantas citações
+          (sem contar auto-citação) ele acumula a cada ano publicando.
+        </p>
+        <p className="mb-3 text-sm text-zinc-600 dark:text-zinc-400">
+          <strong>Como:</strong> ajustamos a reta apenas nos autores &ldquo;normais&rdquo;,
+          deixando de fora os {report.regression.droppedCount} que se auto-citam muito
+          (acima de {pct(report.regression.selfPctThreshold)}). Depois pegamos esses outliers e
+          comparamos as citações <em>reais</em> deles (incluindo auto-citação) com o que a reta previa.
+          Se a diferença (resíduo) for muito positiva, o autor pode estar inflando o número
+          via auto-citação.
         </p>
         <RegressionPanel
           authors={authors}

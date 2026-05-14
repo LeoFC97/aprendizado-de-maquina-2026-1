@@ -72,32 +72,52 @@ export function RegressionPanel({ authors, regression, residuals }: Props) {
   return (
     <div className="space-y-6">
       <div className="grid gap-4 md:grid-cols-4">
-        <Stat label="a (intercepto)" value={fmt(regression.a, 2)} />
-        <Stat label="b (inclinação)" value={fmt(regression.b, 2)} />
-        <Stat label="R²" value={fmt(regression.r2, 4)} />
         <Stat
-          label="n (ajuste)"
+          label="Citações por ano (b)"
+          value={fmt(regression.b, 1)}
+          hint="quanto a reta sobe a cada ano extra de carreira"
+        />
+        <Stat
+          label="Citações no ano 0 (a)"
+          value={fmt(regression.a, 0)}
+          hint="intercepto — onde a reta cruza o eixo y"
+        />
+        <Stat
+          label="R² (qualidade do ajuste)"
+          value={fmt(regression.r2, 3)}
+          hint={`${(regression.r2 * 100).toFixed(1)}% da variação explicada pela reta`}
+        />
+        <Stat
+          label="Autores usados no ajuste"
           value={`${regression.n.toLocaleString("pt-BR")} de ${(regression.n + regression.droppedCount).toLocaleString("pt-BR")}`}
-          hint={`${regression.droppedCount} outliers self% descartados (limite ${pct(regression.selfPctThreshold)})`}
+          hint={`${regression.droppedCount} autores com self% > ${pct(regression.selfPctThreshold)} foram deixados de fora`}
         />
       </div>
 
       <div className="rounded border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-950">
-        <h3 className="mb-1 font-medium">Dispersão e reta ajustada</h3>
+        <h3 className="mb-1 font-medium">Citações vs. anos de carreira</h3>
         <p className="mb-3 text-xs text-zinc-500">
-          x = {regression.xLabel} (ref. {regression.referenceYear}) · y = {regression.yLabel}.
-          Pontos cinzas: amostra de {cleanSample.length.toLocaleString("pt-BR")} autores não-outliers.
-          Pontos vermelhos: {outlierPoints.length} outliers de self% (excluídos do fit).
+          Cada ponto é um autor. <span className="font-medium text-zinc-700 dark:text-zinc-300">Cinza</span>:
+          autor &ldquo;normal&rdquo; (self% baixo, usado para ajustar a reta).
+          <span className="ml-1 font-medium text-rose-600">Vermelho</span>: autor com
+          auto-citação alta (deixado de fora). A linha azul é a reta que prevê o
+          número esperado de citações para cada ano de carreira.
         </p>
-        <ResponsiveContainer width="100%" height={360}>
-          <ComposedChart>
+        <ResponsiveContainer width="100%" height={380}>
+          <ComposedChart margin={{ top: 10, right: 20, left: 20, bottom: 30 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="currentColor" opacity={0.1} />
             <XAxis
               type="number"
               dataKey="x"
               name="anos"
               tick={{ fontSize: 11, fill: "currentColor" }}
-              label={{ value: "Anos desde 1ª publicação", position: "insideBottom", offset: -5, fontSize: 11 }}
+              label={{
+                value: "Anos publicando (carreira)",
+                position: "insideBottom",
+                offset: -15,
+                fontSize: 12,
+                fill: "currentColor",
+              }}
             />
             <YAxis
               type="number"
@@ -105,6 +125,14 @@ export function RegressionPanel({ authors, regression, residuals }: Props) {
               name="citações (sem auto)"
               tick={{ fontSize: 11, fill: "currentColor" }}
               tickFormatter={(v) => `${(v / 1000).toFixed(0)}k`}
+              label={{
+                value: "Citações sem auto-cit.",
+                angle: -90,
+                position: "insideLeft",
+                offset: 0,
+                fontSize: 12,
+                fill: "currentColor",
+              }}
             />
             <Tooltip
               cursor={{ strokeDasharray: "3 3" }}
@@ -121,16 +149,16 @@ export function RegressionPanel({ authors, regression, residuals }: Props) {
                 return point?.name ? `${point.name} · ${point.x} anos` : "";
               }}
             />
-            <Legend wrapperStyle={{ fontSize: 12 }} />
+            <Legend wrapperStyle={{ fontSize: 12, paddingTop: 10 }} />
             <Scatter
-              name="não-outliers (amostra)"
+              name={`Autores normais (amostra de ${cleanSample.length.toLocaleString("pt-BR")})`}
               data={cleanSample}
               fill="#94a3b8"
               shape="circle"
               opacity={0.4}
             />
             <Scatter
-              name="outliers self%"
+              name={`Autores com auto-citação alta (${outlierPoints.length})`}
               data={outlierPoints}
               fill="#ef4444"
               shape="circle"
@@ -146,7 +174,7 @@ export function RegressionPanel({ authors, regression, residuals }: Props) {
               stroke="#6366f1"
               strokeWidth={2}
               dot={false}
-              name={`y = ${regression.a.toFixed(1)} + (${regression.b.toFixed(2)})·x`}
+              name="Reta ajustada (citações esperadas)"
             />
           </ComposedChart>
         </ResponsiveContainer>
@@ -191,11 +219,14 @@ function ResidualsTable({ residuals }: { residuals: OutlierResidual[] }) {
   return (
     <div className="rounded border border-zinc-200 dark:border-zinc-800">
       <div className="border-b border-zinc-200 px-4 py-3 dark:border-zinc-800">
-        <h3 className="font-medium">Resíduos: outliers de self% vs. modelo</h3>
+        <h3 className="font-medium">Quem auto-cita demais — está acima ou abaixo do esperado?</h3>
         <p className="text-xs text-zinc-500">
-          Para cada autor com auto-citação acima da cerca IQR, comparamos as citações reais
-          <strong> com auto-cit. (nc)</strong> contra o previsto pelo modelo ajustado nos não-outliers.
-          Resíduo &gt; 0 = mais citações reais do que o esperado para o tempo de carreira.
+          Para cada autor com auto-citação alta, mostramos o que a reta previa de citações
+          (<strong>ŷ</strong>) versus o que ele realmente teve <strong>contando as auto-citações</strong>{" "}
+          (<strong>nc</strong>). A diferença é o <strong>resíduo</strong>:
+          <span className="ml-1 text-emerald-600">verde positivo</span> = teve mais citações que o esperado
+          (pode estar inflando via auto-cit.);
+          <span className="ml-1 text-rose-600">vermelho negativo</span> = mesmo com auto-citação, ficou abaixo.
         </p>
       </div>
       <div className="overflow-x-auto">
