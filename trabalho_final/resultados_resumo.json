@@ -1,0 +1,366 @@
+{
+  "shape_raw": [
+    41188,
+    19
+  ],
+  "colunas": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "housing",
+    "loan",
+    "month",
+    "day_of_week",
+    "duration",
+    "pdays",
+    "previous",
+    "poutcome",
+    "emp.var.rate",
+    "cons.price.idx",
+    "cons.conf.idx",
+    "euribor3m",
+    "nr.employed",
+    "y"
+  ],
+  "target": {
+    "no": 36548,
+    "yes": 4640,
+    "pct_yes": 11.3
+  },
+  "unknowns": {
+    "default": 8597,
+    "education": 1731,
+    "housing": 990,
+    "loan": 990,
+    "job": 330,
+    "marital": 80
+  },
+  "n_duplicatas": 22,
+  "outliers_eda": {
+    "age": {
+      "q1": 32.0,
+      "q3": 47.0,
+      "lower": 9.5,
+      "upper": 69.5,
+      "n_out": 469,
+      "pct_out": 1.14,
+      "min": 17.0,
+      "max": 98.0
+    },
+    "duration": {
+      "q1": 102.0,
+      "q3": 319.0,
+      "lower": -223.5,
+      "upper": 644.5,
+      "n_out": 2963,
+      "pct_out": 7.19,
+      "min": 0.0,
+      "max": 4918.0
+    },
+    "previous": {
+      "q1": 0.0,
+      "q3": 0.0,
+      "lower": 0.0,
+      "upper": 0.0,
+      "n_out": 5625,
+      "pct_out": 13.66,
+      "min": 0.0,
+      "max": 7.0
+    }
+  },
+  "pdays_999": {
+    "n": 39673,
+    "pct": 96.3
+  },
+  "adesao_por": {
+    "poutcome": {
+      "success": 65.1,
+      "failure": 14.2,
+      "nonexistent": 8.8
+    },
+    "month": {
+      "mar": 50.5,
+      "dec": 48.9,
+      "sep": 44.9,
+      "oct": 43.9,
+      "apr": 20.5,
+      "aug": 10.6,
+      "jun": 10.5,
+      "nov": 10.1,
+      "jul": 9.0,
+      "may": 6.4
+    },
+    "job": {
+      "student": 31.4,
+      "retired": 25.2,
+      "unemployed": 14.2,
+      "admin.": 13.0,
+      "management": 11.2,
+      "unknown": 11.2,
+      "technician": 10.8,
+      "self-employed": 10.5,
+      "housemaid": 10.0,
+      "entrepreneur": 8.5,
+      "services": 8.1,
+      "blue-collar": 6.9
+    },
+    "education": {
+      "illiterate": 22.2,
+      "unknown": 14.5,
+      "university.degree": 13.7,
+      "professional.course": 11.3,
+      "high.school": 10.8,
+      "basic.4y": 10.2,
+      "basic.6y": 8.2,
+      "basic.9y": 7.8
+    },
+    "default": {
+      "no": 12.9,
+      "unknown": 5.2,
+      "yes": 0.0
+    }
+  },
+  "adesao_contato_previo": {
+    "com_contato_previo": 63.8,
+    "sem_contato_previo": 9.3
+  },
+  "macro_por_classe": {
+    "euribor3m": {
+      "no": 3.811,
+      "yes": 2.123
+    },
+    "nr.employed": {
+      "no": 5176.167,
+      "yes": 5095.116
+    },
+    "emp.var.rate": {
+      "no": 0.249,
+      "yes": -1.233
+    }
+  },
+  "shape_dedup": [
+    41166,
+    19
+  ],
+  "preproc": {
+    "cat_cols": [
+      "job",
+      "marital",
+      "education",
+      "default",
+      "housing",
+      "loan",
+      "month",
+      "day_of_week",
+      "poutcome"
+    ],
+    "n_features": 51
+  },
+  "split": {
+    "train": [
+      30874,
+      51
+    ],
+    "test": [
+      10292,
+      51
+    ],
+    "y_train": {
+      "0": 27396,
+      "1": 3478
+    },
+    "y_test": {
+      "0": 9132,
+      "1": 1160
+    }
+  },
+  "cv_f1_por_depth": {
+    "3": 0.4551,
+    "4": 0.4569,
+    "5": 0.458
+  },
+  "best_depth": 5,
+  "final_teste": {
+    "acuracia": 0.845,
+    "precisao": 0.385,
+    "recall": 0.626,
+    "f1": 0.477,
+    "roc_auc": 0.789,
+    "cm": [
+      [
+        7973,
+        1159
+      ],
+      [
+        434,
+        726
+      ]
+    ]
+  },
+  "final_treino": {
+    "acuracia": 0.84,
+    "precisao": 0.373,
+    "recall": 0.614,
+    "f1": 0.464,
+    "roc_auc": 0.783,
+    "cm": [
+      [
+        23810,
+        3586
+      ],
+      [
+        1344,
+        2134
+      ]
+    ]
+  },
+  "arvore": {
+    "profundidade": 5,
+    "n_nos": 61,
+    "n_folhas": 31,
+    "root_feature": "nr.employed",
+    "root_threshold": 5087.65
+  },
+  "importancias_top15": [
+    [
+      "nr.employed",
+      0.7072
+    ],
+    [
+      "cons.conf.idx",
+      0.1433
+    ],
+    [
+      "cons.price.idx",
+      0.0386
+    ],
+    [
+      "euribor3m",
+      0.0317
+    ],
+    [
+      "month_oct",
+      0.0199
+    ],
+    [
+      "contato_previo",
+      0.0184
+    ],
+    [
+      "pdays",
+      0.0176
+    ],
+    [
+      "default_unknown",
+      0.0124
+    ],
+    [
+      "age",
+      0.0031
+    ],
+    [
+      "previous",
+      0.002
+    ],
+    [
+      "job_self-employed",
+      0.0017
+    ],
+    [
+      "poutcome_nonexistent",
+      0.0013
+    ],
+    [
+      "month_jul",
+      0.001
+    ],
+    [
+      "job_unknown",
+      0.0007
+    ],
+    [
+      "month_nov",
+      0.0005
+    ]
+  ],
+  "regras_txt": "|--- nr.employed <= 5087.65\n|   |--- pdays <= 16.50\n|   |   |--- day_of_week_mon <= 0.50\n|   |   |   |--- truncated branch of depth 3\n|   |   |--- day_of_week_mon >  0.50\n|   |   |   |--- truncated branch of depth 3\n|   |--- pdays >  16.50\n|   |   |--- euribor3m <= 0.74\n|   |   |   |--- truncated branch of depth 3\n|   |   |--- euribor3m >  0.74\n|   |   |   |--- truncated branch of depth 3\n|--- nr.employed >  5087.65\n|   |--- cons.conf.idx <= -46.65\n|   |   |--- default_unknown <= 0.50\n|   |   |   |--- truncated branch of depth 3\n|   |   |--- default_unknown >  0.50\n|   |   |   |--- truncated branch of depth 3\n|   |--- cons.conf.idx >  -46.65\n|   |   |--- cons.price.idx <= 93.96\n|   |   |   |--- truncated branch of depth 3\n|   |   |--- cons.price.idx >  93.96\n|   |   |   |--- truncated branch of depth 3\n",
+  "baseline_majoritaria_acc": 0.887,
+  "sens_outliers_bounds": {
+    "lower": 9.5,
+    "upper": 69.5,
+    "n_acima_treino": 344,
+    "n_acima_teste": 123
+  },
+  "sens_outliers_winsor": {
+    "acuracia": 0.845,
+    "precisao": 0.386,
+    "recall": 0.626,
+    "f1": 0.477,
+    "roc_auc": 0.789,
+    "cm": [
+      [
+        7975,
+        1157
+      ],
+      [
+        434,
+        726
+      ]
+    ]
+  },
+  "sens_outliers_remocao": {
+    "acuracia": 0.846,
+    "precisao": 0.386,
+    "recall": 0.623,
+    "f1": 0.477,
+    "roc_auc": 0.785,
+    "cm": [
+      [
+        7982,
+        1150
+      ],
+      [
+        437,
+        723
+      ]
+    ]
+  },
+  "sens_outliers_n_removidas": 344,
+  "sens_desbal_sem_peso": {
+    "acuracia": 0.898,
+    "precisao": 0.644,
+    "recall": 0.216,
+    "f1": 0.323,
+    "roc_auc": 0.784,
+    "cm": [
+      [
+        8994,
+        138
+      ],
+      [
+        910,
+        250
+      ]
+    ]
+  },
+  "sens_desbal_undersampling": {
+    "acuracia": 0.838,
+    "precisao": 0.37,
+    "recall": 0.626,
+    "f1": 0.465,
+    "roc_auc": 0.785,
+    "cm": [
+      [
+        7894,
+        1238
+      ],
+      [
+        434,
+        726
+      ]
+    ]
+  },
+  "sens_desbal_n_treino_under": 6956
+}
