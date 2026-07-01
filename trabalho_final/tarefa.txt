@@ -1,0 +1,33 @@
+Bom dia!
+
+Seguem as orientações para o
+trabalho final da disciplina (para que vocês possam começar a
+desenvolvê-lo a partir da próxima segunda-feira pela manhã).
+
+
+Na
+próxima 5a-feira (25/06) no horário da aula, estarei disponível na sala de aula, para um um check-point presencial
+para tirar dúvidas. 
+
+A entrega do trabalho será em 02/07 (presencial).
+
+Em anexo estou enviando: 
+1. Arquivo html com orientações para o desenvolvimetno da atividade avaliativa.
+
+2. Notebook com células para uma estrutura mínima de entrega, mas os
+discentes deverão explorar e demonstrar ao máximo o conhecimento
+alcançado.  A demonstraçao de
+"fluência" inluenciará na nota atribuída ao trabalho. Observe que3 as c´welulas de código foram exluídas propositalmente do notebook.
+
+3. Arquivo html, como o dicionário de dados. Como os datasets foram individualizados com a retirada de colunas do dataset original, o dicionário de dados poderá conter informações sobre variáveis d que foram descartadas do dataset. 
+
+
+  O dataset (individualizado) será enviado por email. Ele apresntada dados sobre
+uma campanha de marketing para adesão de clientes a um produto
+bancário. A situação é real, mas foram introduzidas, por mim, algumas
+artificalidades para  gerar uma situação pedagociamente interessante.
+Devido a essas artificialidades realizadas com objetivo  pedagógico, os resultados não deverão ser usados em  publicações. 
+
+As repostas dervem ser encaminhadas através do formulário em anexo.
+
+Votos de sucesso!
