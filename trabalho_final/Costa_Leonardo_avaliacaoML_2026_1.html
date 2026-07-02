@@ -7796,7 +7796,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ebe49ce5">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d7a22a9a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7810,7 +7810,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9044624e">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f8ef8970">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7838,7 +7838,148 @@ ser usados em publicações.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4d040402">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ccf7ee25">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="1.1-Dicion%C3%A1rio-de-dados">1.1 Dicionário de dados<a class="anchor-link" href="#1.1-Dicion%C3%A1rio-de-dados">¶</a></h3><p>As 19 colunas da versão individualizada, com os valores observados no arquivo recebido:</p>
+<table>
+<thead>
+<tr>
+<th>Coluna</th>
+<th>Tipo</th>
+<th>Descrição</th>
+<th>Valores possíveis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>age</code></td>
+<td>numérica</td>
+<td>Idade do cliente</td>
+<td>17 a 98 anos</td>
+</tr>
+<tr>
+<td><code>job</code></td>
+<td>categórica</td>
+<td>Profissão</td>
+<td><code>admin.</code>, <code>blue-collar</code>, <code>entrepreneur</code>, <code>housemaid</code>, <code>management</code>, <code>retired</code>, <code>self-employed</code>, <code>services</code>, <code>student</code>, <code>technician</code>, <code>unemployed</code>, <code>unknown</code></td>
+</tr>
+<tr>
+<td><code>marital</code></td>
+<td>categórica</td>
+<td>Estado civil</td>
+<td><code>married</code>, <code>single</code>, <code>divorced</code>, <code>unknown</code></td>
+</tr>
+<tr>
+<td><code>education</code></td>
+<td>categórica</td>
+<td>Escolaridade</td>
+<td><code>basic.4y</code>, <code>basic.6y</code>, <code>basic.9y</code>, <code>high.school</code>, <code>professional.course</code>, <code>university.degree</code>, <code>illiterate</code>, <code>unknown</code></td>
+</tr>
+<tr>
+<td><code>default</code></td>
+<td>categórica</td>
+<td>Tem crédito em inadimplência?</td>
+<td><code>no</code>, <code>yes</code>, <code>unknown</code></td>
+</tr>
+<tr>
+<td><code>housing</code></td>
+<td>categórica</td>
+<td>Tem financiamento habitacional?</td>
+<td><code>no</code>, <code>yes</code>, <code>unknown</code></td>
+</tr>
+<tr>
+<td><code>loan</code></td>
+<td>categórica</td>
+<td>Tem empréstimo pessoal?</td>
+<td><code>no</code>, <code>yes</code>, <code>unknown</code></td>
+</tr>
+<tr>
+<td><code>month</code></td>
+<td>categórica</td>
+<td>Mês do último contato</td>
+<td><code>mar</code>–<code>dec</code> (10 valores; não houve ligações em jan/fev)</td>
+</tr>
+<tr>
+<td><code>day_of_week</code></td>
+<td>categórica</td>
+<td>Dia da semana do contato</td>
+<td><code>mon</code>, <code>tue</code>, <code>wed</code>, <code>thu</code>, <code>fri</code></td>
+</tr>
+<tr>
+<td><code>duration</code></td>
+<td>numérica</td>
+<td>Duração da última ligação (s)</td>
+<td>0 a 4.918 — <strong>removida na Seção 3 (data leakage)</strong></td>
+</tr>
+<tr>
+<td><code>pdays</code></td>
+<td>numérica</td>
+<td>Dias desde o contato da campanha anterior</td>
+<td>0 a 27, ou <strong>999 = nunca contatado</strong> (sentinela)</td>
+</tr>
+<tr>
+<td><code>previous</code></td>
+<td>numérica</td>
+<td>Nº de contatos em campanhas anteriores</td>
+<td>0 a 7</td>
+</tr>
+<tr>
+<td><code>poutcome</code></td>
+<td>categórica</td>
+<td>Resultado da campanha anterior</td>
+<td><code>success</code>, <code>failure</code>, <code>nonexistent</code></td>
+</tr>
+<tr>
+<td><code>emp.var.rate</code></td>
+<td>numérica</td>
+<td>Variação da taxa de emprego (indicador trimestral)</td>
+<td>−3,4 a 1,4</td>
+</tr>
+<tr>
+<td><code>cons.price.idx</code></td>
+<td>numérica</td>
+<td>Índice de preços ao consumidor (mensal)</td>
+<td>92,2 a 94,8</td>
+</tr>
+<tr>
+<td><code>cons.conf.idx</code></td>
+<td>numérica</td>
+<td>Índice de confiança do consumidor (mensal)</td>
+<td>−50,8 a −26,9</td>
+</tr>
+<tr>
+<td><code>euribor3m</code></td>
+<td>numérica</td>
+<td>Taxa de juros Euribor 3 meses (diária)</td>
+<td>0,63 a 5,05</td>
+</tr>
+<tr>
+<td><code>nr.employed</code></td>
+<td>numérica</td>
+<td>Nº de empregados na economia, em milhares (trimestral)</td>
+<td>4.963,6 a 5.228,1</td>
+</tr>
+<tr>
+<td><code>y</code></td>
+<td>categórica</td>
+<td><strong>ALVO</strong>: aderiu ao depósito a prazo?</td>
+<td><code>no</code>, <code>yes</code></td>
+</tr>
+</tbody>
+</table>
+<p>As 5 últimas linhas antes do alvo são <strong>indicadores macroeconômicos</strong> de Portugal — iguais para
+todos os clientes contatados no mesmo período. As demais descrevem o <strong>perfil do cliente</strong> e o
+<strong>histórico de contato</strong>. Em relação ao dataset original da UCI, faltam <code>contact</code> e <code>campaign</code>
+(removidas na individualização).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=332f80ff">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7849,7 +7990,7 @@ ser usados em publicações.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b8338afc">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b6f7eefc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7894,7 +8035,7 @@ ser usados em publicações.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c777f42b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e99f7eb7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8086,7 +8227,7 @@ Primeiras linhas:
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d44d63f7">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c87f8acd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8143,7 +8284,7 @@ Total de valores ausentes (NaN): 0
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ec293a0f">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=65234857">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8156,7 +8297,7 @@ está codificada como a categoria <code>"unknown"</code> nas variáveis categór
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=10b872b0">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=960a79cb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8228,7 +8369,7 @@ Name: proportion, dtype: float64
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8d17ccfb">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1c45923b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8245,7 +8386,7 @@ de a árvore ignorar a classe minoritária — exatamente o que testaremos na Se
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d92b37fb">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1666231c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8297,7 +8438,7 @@ dtype: float64
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9758cd32">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ed00d7b6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8311,7 +8452,7 @@ proporcionalmente pequenas. A estratégia de tratamento é discutida na Seção 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d8c530da">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=41386786">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8343,7 +8484,7 @@ O dataset passaria de 41188 para 41166 linhas após a remoção (feita na Seçã
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0e66185e">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dd0d0136">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8356,7 +8497,7 @@ treino e no teste ao mesmo tempo). Serão removidas no pré-processamento.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=705dae2a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5f31abeb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8493,7 +8634,7 @@ treino e no teste ao mesmo tempo). Serão removidas no pré-processamento.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e5043e46">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=050d1a16">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8520,7 +8661,7 @@ confrontaremos com o que a árvore aprendeu.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e87cbaae">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d7c84bca">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8589,7 +8730,7 @@ yes      2.123     5095.116        -1.233
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0037d1d6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8e2ed049">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8621,7 +8762,7 @@ mais atraentes. Guarde este fato: ele explicará a árvore da Seção 5.</li>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8116b584">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=09f4231e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8677,7 +8818,7 @@ mais atraentes. Guarde este fato: ele explicará a árvore da Seção 5.</li>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d853d3c1">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=48cfeafc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8717,7 +8858,7 @@ Criada 'contato_previo' (1 = já contatado): 1515 clientes.
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a8f05ad8">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=075b3df6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8762,7 +8903,7 @@ Nº de features: 51
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c759f182">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a1a80086">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8802,7 +8943,7 @@ Proporção de 'yes' — treino: 0.113 | teste: 0.113 (preservada ✓)
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=47f5c760">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fd811f11">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8817,7 +8958,7 @@ métrica adequada ao desbalanceamento.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=130b04cd">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bd57e1a3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8872,7 +9013,7 @@ Melhor profundidade: max_depth = 5
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=af51dde4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=139b5b52">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8891,7 +9032,7 @@ folhas para a classe minoritária em vez de "chutar não" para todo mundo;</li>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4880dbd3">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f8a86df6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8926,7 +9067,7 @@ Profundidade: 5 | Nós: 61 | Folhas: 31
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=80d2ac38">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f9de01c4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8938,7 +9079,7 @@ responde sempre "não").</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b88461a5">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=148ed19d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9058,7 +9199,7 @@ weighted avg       0.88      0.85      0.86     10292
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a39a94f8">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5bfd82ab">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9081,7 +9222,7 @@ de profundidade 5 generaliza bem.</li>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=69dc7afc">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bb6f0781">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9138,7 +9279,7 @@ O modelo recomendaria ligar para 1885 clientes (18.3% da base de teste).
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=25a11653">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6ee03403">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9152,7 +9293,7 @@ recalibrado movendo o limiar de decisão, conforme o custo da ligação vs. o va
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=77679f02">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=343538bf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9198,7 +9339,7 @@ recalibrado movendo o limiar de decisão, conforme o custo da ligação vs. o va
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d73e6c7c">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6cdbe742">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9212,7 +9353,7 @@ faixa útil de recall.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3a4b1af4">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=fc238b48">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9260,7 +9401,7 @@ Nº de nós: 61
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=430c2b83">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=af1317a2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9313,7 +9454,7 @@ Nº de nós: 61
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=46bbab78">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e078af38">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9371,7 +9512,7 @@ dtype: float64
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=90b42230">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=acf1d4d1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9438,7 +9579,7 @@ limitação conhecida dessa medida.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=557d6e60">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e6cbf839">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9460,7 +9601,7 @@ evitando vazamento de informação da partição de avaliação.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=08f77302">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c7b7c946">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9580,7 +9721,7 @@ Comparação dos cenários de outliers (teste):
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=35c7fb74">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1b9a8f4d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9607,7 +9748,7 @@ igualar a minoritária (3.478 de cada), sem reponderação.</li>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=73ce6240">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=956f20b3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9658,13 +9799,7 @@ igualar a minoritária (3.478 de cada), sem reponderação.</li>
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Treino do cenário undersampling: 6956 linhas (descartadas 23918 da classe majoritária)
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>
+
 Comparação dos cenários de desbalanceamento (teste):
 </pre>
 </div>
@@ -9740,7 +9875,7 @@ Comparação dos cenários de desbalanceamento (teste):
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=95eea54d">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5dd52429">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9766,7 +9901,7 @@ acurácia leva a modelos que ignoram justamente a classe de interesse.</strong><
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dc775819">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fa1a4c4e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9831,7 +9966,7 @@ ao triplicar a eficiência das ligações, e o roteiro de melhoria está claro.<
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8de76053">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b8f870cf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9843,7 +9978,7 @@ Ambiente utilizado:</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=aa3e66c1">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=359ce5c4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
